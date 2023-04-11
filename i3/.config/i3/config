@@ -8,7 +8,7 @@ set $mod Mod4
 exec setxkbmap -model abnt2 -layout br
 #exec --no-startup-id feh bg-scale ~/Pictures/wallpaper/bg2.jpg
 exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id polybar
+exec_always --no-startup-id polybar -r
 #$HOME/.config/polybar/launch.sh -r
 
 ##################################
