@@ -11,6 +11,7 @@ scrolling:
   history: 10000
   multiplier: 3
 
+
 font:
   normal:
     family: JetBrainsMono Nerd Font
