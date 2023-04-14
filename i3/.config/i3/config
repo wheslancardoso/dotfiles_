@@ -5,10 +5,19 @@
 
 set $mod Mod4
 
+# Configurações de tema GTK
+# Substitua "Dracula" pelo nome do tema que você está usando
+exec --no-startup-id gtk-theme-switch2 gtk-theme=Dracula
+# Configurações de tema GTK
+# Substitua "Dracula" pelo nome do tema que você está usando
+exec --no-startup-id env GTK_THEME=Dracula gtk-settings-daemon
+
+
 exec setxkbmap -model abnt2 -layout br
+exec xinput --set-prop 14 'libinput Accel Speed' -1,3
 #exec --no-startup-id feh bg-scale ~/Pictures/wallpaper/bg2.jpg
 exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id polybar -r
+exec --no-startup-id polybar 
 #$HOME/.config/polybar/launch.sh -r
 set $menucmd rofi -show drun
 bindsym $mod+space exec --no-startup-id $menucmd
@@ -63,7 +72,7 @@ bindsym $mod+Return exec alacritty
 
 ## Launch // File Browser // <><Shift> n ##
 set_from_resource $i3-wm.binding.files i3-wm.binding.files Shift+n
-set_from_resource $i3-wm.program.files i3-wm.program.files nautilus
+set_from_resource $i3-wm.program.files i3-wm.program.files thunar
 bindsym $mod+$i3-wm.binding.files exec --no-startup-id $i3-wm.program.files
 
 # Launch web browser
@@ -186,6 +195,8 @@ bindsym $mod+$i3-wm.binding.shutdown exec $i3-wm.program.shutdown
 set $i3-wm.binding.sleep Shift+s
 set $i3-wm.program.sleep systemctl suspend
 bindsym $mod+$i3-wm.binding.sleep exec $i3-wm.program.sleep
+
+bindsym $mod+Shift+q exec "i3-msg exit"
 
 
 ###################################
