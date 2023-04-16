@@ -119,6 +119,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 alias ls="exa --icons"
 alias bat="bat --style=auto"
+alias vim="sudo lvim"
 
 #sudo chmod +rx /opt/asdf-vm/asdf.sh
 
@@ -127,3 +128,5 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/usr/lib/xdg-utils"
+export PATH="$PATH:/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
