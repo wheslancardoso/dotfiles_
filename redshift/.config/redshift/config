@@ -1,0 +1,9 @@
+; Configuração manual da localização
+[redshift]
+location-provider=manual
+temp-day=4500:2500
+
+; Coordenadas geográficas da sua localização
+[manual]
+lat=-16.6799
+lon=-49.255
