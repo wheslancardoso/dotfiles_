@@ -11,6 +11,7 @@ lvim.plugins = {
   { "tomasr/molokai" },
   { "ayu-theme/ayu-vim" },
   { "Mofiqul/dracula.nvim"},
+  { "tiagovla/tokyodark.nvim"},
   
   { "folke/trouble.nvim",
     cmd = "TroubleToggle",
