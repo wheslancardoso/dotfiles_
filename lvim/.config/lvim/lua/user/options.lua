@@ -1,7 +1,10 @@
-vim.opt.cursorcolumn = true -- This sets the 'cursorcolumn' option to true, which enables highlighting of the current cursor column.
+local options = {
+  termguicolors = true
+}
+vim.opt.cursorcolumn = false -- This sets the 'cursorcolumn' option to true, which enables highlighting of the current cursor column.
 vim.opt.relativenumber = true -- This sets the 'relativenumber' option to true, which displays line numbers relative to the current line.
 vim.opt.showcmd = true -- This sets the 'showcmd' option to true, which displays incomplete commands on the last line of the screen.
-vim.g["VM_mouse_mappings"] = 1 -- This enables mouse support for the Visual Multi plugin. 
+vim.g["VM_mouse_mappings"] = 1 -- This enables mouse support for the Visual Multi plugin.
 vim.opt.shell = "/bin/zsh" -- sets the shell for the terminal emulator to Zsh.
 vim.o.linebreak = true -- enables line wrapping at specified characters instead of breaking words in text with spaces.
 vim.o.wrap = false -- disables automatic line wrapping
@@ -25,10 +28,10 @@ lvim.builtin.treesitter.ensure_installed = {
   "rust",
   "java",
   "yaml",
-} -- specifies the list of languages that should have their syntax highlighting enabled. 
+} -- specifies the list of languages that should have their syntax highlighting enabled.
 
 lvim.builtin.treesitter.highlight.enabled = true -- enables syntax highlighting using Treesitter.
-lvim.builtin.project.detection_methods = { "lsp", "pattern" } -- specifies the methods that will be used to detect the project root. In this case, both LSP (Language Server Protocol) and pattern-based detection are enabled. 
+lvim.builtin.project.detection_methods = { "lsp", "pattern" } -- specifies the methods that will be used to detect the project root. In this case, both LSP (Language Server Protocol) and pattern-based detection are enabled.
 lvim.builtin.project.patterns = {
   ".git",
   "package-lock.json",

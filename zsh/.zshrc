@@ -210,7 +210,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 alias ls="exa --icons"
 alias bat="bat --style=auto"
-alias vim="lvim"
+alias v="sudo lvim"
 
 #sudo chmod +rx /opt/asdf-vm/asdf.sh
 

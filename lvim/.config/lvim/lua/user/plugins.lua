@@ -1,6 +1,6 @@
 lvim.plugins = {
   { 'jose-elias-alvarez/typescript.nvim'}, -- This plugin provides better support for TypeScript language files in Neovim.
-  { 'lunarvim/lunar.nvim'}, -- This plugin is part of LunarVim and provides several features like a built-in dashboard, keybindings, and more. 
+  { 'lunarvim/lunar.nvim'}, -- This plugin is part of LunarVim and provides several features like a built-in dashboard, keybindings, and more.
 
   -- THEMES --
   { "morhetz/gruvbox" },
@@ -11,11 +11,37 @@ lvim.plugins = {
   { "tomasr/molokai" },
   { "ayu-theme/ayu-vim" },
   { "Mofiqul/dracula.nvim"},
+  -- { "Mofiqul/dracula.nvim"},
   { "tiagovla/tokyodark.nvim"},
-  
+
   { "folke/trouble.nvim",
     cmd = "TroubleToggle",
   }, -- This plugin provides an interface for quickly navigating and managing errors, warnings, and other diagnostic messages.
+
+  -- This plugin provides a linetrack of the divs for example like vscode
+  { "michaeljsmith/vim-indent-object"},
+
+  -- -- Multicursor (ctrl up/down, ctrl-N)
+  -- Ctrl Mouse Click
+  -- \\ = leader
+  -- \\\ = add cursor at position
+  -- \\-A = Select all cwords in the file and create a cursor for it
+  -- \\-/ = regex search adding cursor for matches
+  -- \\-\ = cursor at position
+  -- C-N + S-S" (add surround)
+  -- C-Up-Down + \\-< + (char)  = align
+  -- C-Up-Down + \\-0n (\\-N or \\-n) = Append numbers starting on 0
+  -- select `sep`(:) - C-N - (multi cursor on all) -
+  --                  \\-a (align)
+  --                  \\-d (duplicate)
+  --                  \\-C (case conversion)
+  -- C-Down - f: (find `:`) - \\a (align)
+  -- \\-` = tools menu
+  -- C-N - mii - c (select, match inner function, change)
+  { "mg979/vim-visual-multi"},
+
+  -- highlight colors like  #ffcc00
+  { "norcalli/nvim-colorizer.lua"},
 
   {
     "folke/todo-comments.nvim",
@@ -34,7 +60,7 @@ lvim.plugins = {
 --        options = {"buffers", "curdir", "tabpages", "winsize"}
 --      })
 --    end
---  }, -- This plugin provides an easy way to save and restore Neovim sessions.  
+--  }, -- This plugin provides an easy way to save and restore Neovim sessions.
 
   { "christoomey/vim-tmux-navigator" }, -- This plugin allows easy navigation between Neovim panes and Tmux panes.
   { "tpope/vim-surround"}, -- This plugin provides shortcuts for surrounding text with quotes, parens, brackets, etc.
