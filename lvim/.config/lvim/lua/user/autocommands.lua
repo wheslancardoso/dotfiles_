@@ -5,7 +5,7 @@ local augroup = vim.api.nvim_create_augroup
 autocmd({"BufEnter"}, {
   pattern = "*",
   command = "setlocal nospell"
-}) 
+})
 
 -- NNUmber mode toggling
 -- Relative numbers shows on: N, V, *, Focus
@@ -23,13 +23,13 @@ autocmd({ "BufEnter", "FocusGained", "InsertLeave", "WinEnter" }, {
 })
 
 -- Get out of insert on focuslost
-local focus_group = augroup("Focus", {})
-autocmd({ "FocusLost" }, {
-  group = focus_group,
-  pattern = { "*" },
-  command = "if mode() == 'i' | stopinsert | endif",
-  -- alternative: | call feedkeys("\<C-\>\<C-n>") |
-})
+-- local focus_group = augroup("Focus", {})
+-- autocmd({ "FocusLost" }, {
+--   group = focus_group,
+--   pattern = { "*" },
+--   command = "if mode() == 'i' | stopinsert | endif",
+--   -- alternative: | call feedkeys("\<C-\>\<C-n>") |
+-- })
 
 -- TRIM whitespace on specified patterns when saving.
 local trim_group = augroup("Trim", {})
@@ -62,4 +62,3 @@ autocmd({ "BufWritePre" }, {
     if last_nonblank < n_lines then vim.api.nvim_buf_set_lines(0, last_nonblank, n_lines, true, {}) end
   end,
 })
-

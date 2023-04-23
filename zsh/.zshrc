@@ -221,3 +221,5 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/usr/lib/xdg-utils"
 export PATH="$PATH:/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH=$PATH:/usr/bin/ruby
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
