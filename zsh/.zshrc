@@ -216,6 +216,8 @@ alias v="sudo lvim"
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$PATH:/var/lib/flatpak/exports/bin/com.spotify.Client"
+export PATH=$PATH:/var/lib/flatpak/exports/bin
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/usr/lib/xdg-utils"
