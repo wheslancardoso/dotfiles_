@@ -11,6 +11,8 @@ scrolling:
   history: 10000
   multiplier: 3
 
+cursor:
+  sytle: Beam
 
 font:
   normal:
