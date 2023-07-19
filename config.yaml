@@ -1,0 +1,69 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+  d_picom:
+    src: config/picom
+    dst: ~/.config/picom
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_alacritty:
+    src: config/alacritty
+    dst: ~/.config/alacritty
+  d_nitrogen:
+    src: config/nitrogen
+    dst: ~/.config/nitrogen
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
+  d_gtk-2.0:
+    src: config/gtk-2.0
+    dst: ~/.config/gtk-2.0
+  d_gtk-3.0:
+    src: config/gtk-3.0
+    dst: ~/.config/gtk-3.0
+  d_neofetch:
+    src: config/neofetch
+    dst: ~/.config/neofetch
+  d_fonts:
+    src: local/share/fonts
+    dst: ~/.local/share/fonts
+  d_kora-icon-theme:
+    src: icons/kora
+    dst: ~/.icons/kora
+  d_catppuchin-mocha-darkcursor:
+    src: icons/catppuchin-mocha-dark-cursors
+    dst: ~/.icons/catppuchin-mocha-dark-cursors
+  d_themes:
+    src: themes
+    dst: ~/.themes
+  f_zsh:
+    src: zshrc
+    dst: ~/.zshrc
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+  f_p10k:
+    src: p10k.zsh
+    dst: ~/.p10k.zsh
+  f_redshift-conf:
+    src: config/redshift.conf
+    dst: ~/.config/redshift.conf
+  f_user-dirs:
+    src: config/user-dirs.dirs
+    dst: ~/.config/user-dirs.dirs
+
+profiles:
