@@ -42,7 +42,7 @@ sudo nala install -y lxappearance
 sudo nala install -y lxinput gparted copyq flameshot
 
 # file manager
-sudo nala install -y thunar
+sudo nala install -y thunar vifm
 
 # terminal
 sudo nala install -y xfce4-terminal
