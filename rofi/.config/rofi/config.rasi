@@ -1,0 +1,10 @@
+configuration {
+	display-drun: "Applications";
+	display-window: "Windows:";
+	drun-display-format: "{icon} {name}";
+	modi: "window,run,drun";
+	show-icons: true;
+	font: "ShureTechMono Nerd Font Mono 12";
+	icon-theme: "kora";
+}
+@theme "~/.config/rofi/theme.rasi"
