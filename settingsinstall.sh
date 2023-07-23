@@ -44,7 +44,7 @@ echo -e "\e[1;34m*******************************"
 echo "Importing dotfiles"
 echo "*******************************\e[0m"
 sudo nala install -y stow
-stow alacritty dunst neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs X zsh gitconf qt5ct
+stow alacritty dunst neofetch picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
 
 # network manager
 echo -e "\e[1;34m*******************************"
@@ -112,7 +112,8 @@ sudo nala install -y zsh
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 sudo rm -rf ~/.zshrc
 mv ~/.zshrc* ./.zshrc
-
+sudo nala install -y exa
+sudo nala install -y bat
 
 # browser install
 echo -e "\e[1;34m*******************************"
@@ -192,3 +193,7 @@ fi
 chsh -s /usr/bin/zsh
 
 source ~/dotfiles_/nerdfontinstall.sh
+
+#cd
+#cd dotfiles_/
+#stow i3 qt5ct nitrogen
