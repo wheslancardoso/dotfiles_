@@ -64,7 +64,7 @@ sudo nala install zsh
 # alacritty install
 echo "Installing Alacritty"
 cd
-git clone git@github.com:wheslancardoso/dotfiles_.git
+git clone https://github.com/alacritty/alacritty.git
 cd alacritty
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
