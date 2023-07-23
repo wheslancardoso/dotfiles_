@@ -5,6 +5,10 @@
 echo "Installing network File Tools/System Events"
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends gvfs-fuse
 
+# install nala (alternative to apt)
+echo "Installing nala"
+sudo apt install -y nala
+
 # audio
 echo "Installing audio packages"
 sudo nala install -y pulseaudio pavucontrol
@@ -21,10 +25,6 @@ sudo nala install -y build-essential curl make
 # pip 3 install
 echo "Installing pip3"
 sudo apt -y install python3-pip
-
-# install nala (alternative to apt)
-echo "Installing nala"
-sudo apt install -y nala
 
 # importing dotfiles
 echo "Importing dotfiles"
