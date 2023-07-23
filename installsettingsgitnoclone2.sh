@@ -20,7 +20,7 @@ sudo nala install -y amd64-microcode
 
 # install basic packages
 echo "Installing basic packages"
-sudo nala install -y build-essential curl make
+sudo nala install -y build-essential curl make libpam0g-dev libxcb-xkb-dev
 
 # pip 3 install
 echo "Installing pip3"
