@@ -47,7 +47,7 @@ sudo nala install -y stow
 echo -e "\e[1;34m*******************************"
 echo "Stowing dotfiles"
 echo -e "*******************************\e[0m"
-stow alacritty dunst i3 neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
+# stow alacritty dunst i3 neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
 
 # network manager
 echo -e "\e[1;34m*******************************"
