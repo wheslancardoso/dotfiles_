@@ -42,7 +42,7 @@ sudo nala install -y xorg
 
 # i3 base
 echo "Instaling i3 essential packages"
-sudo nala install -y i3 i3status polybar dmenu picom rofi dunst arandr rar unrar unzip vim 
+sudo nala install -y i3 i3status polybar dmenu picom rofi dunst arandr unzip vim 
 
 # apperancy 
 echo "Installing lxappearance"
