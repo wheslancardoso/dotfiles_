@@ -38,6 +38,7 @@ export PATH="$PATH:/.local/bin"
 #eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 export PATH="/var/lib/flatpak/exports/bin:$PATH"
 export PATH="$HOME/.dotdrop:$PATH"
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # ALIASES
 

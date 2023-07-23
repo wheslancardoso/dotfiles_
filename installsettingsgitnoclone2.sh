@@ -44,10 +44,7 @@ echo -e "\e[1;34m*******************************"
 echo "Importing dotfiles"
 echo "*******************************\e[0m"
 sudo nala install -y stow
-echo -e "\e[1;34m*******************************"
-echo "Stowing dotfiles"
-echo -e "*******************************\e[0m"
-# stow alacritty dunst i3 neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
+stow alacritty dunst neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs X zsh gitconf qt5ct
 
 # network manager
 echo -e "\e[1;34m*******************************"
@@ -69,9 +66,9 @@ sudo nala install -y i3 i3status polybar dmenu picom rofi dunst arandr unzip vim
 
 # apperancy
 echo -e "\e[1;34m*******************************"
-echo "Installing lxappearance"
+echo "Installing lxappearance and qt5ct"
 echo -e "*******************************\e[0m"
-sudo nala install -y lxappearance
+sudo nala install -y lxappearance qt5ct
 
 # other tools
 echo -e "\e[1;34m*******************************"
@@ -84,16 +81,6 @@ echo -e "\e[1;34m*******************************"
 echo "Installing thunar and vifm"
 echo -e "*******************************\e[0m"
 sudo nala install -y thunar vifm
-
-# terminal
-# sudo nala install -y xfce4-terminal
-echo -e "\e[1;34m*******************************"
-echo "Installing zsh"
-echo -e "*******************************\e[0m"
-sudo nala install -y zsh
-#zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
-#sudo rm -rf ~/.zshrc
-#mv ~/.zshrc* ./.zshrc
 
 # alacritty install
 echo -e "\e[1;34m*******************************"
@@ -115,6 +102,18 @@ sudo cp -r extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
 
+# terminal
+# sudo nala install -y xfce4-terminal
+echo -e "\e[1;34m*******************************"
+echo "Installing zsh"
+echo -e "*******************************\e[0m"
+cd
+sudo nala install -y zsh
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+sudo rm -rf ~/.zshrc
+mv ~/.zshrc* ./.zshrc
+
+
 # browser install
 echo -e "\e[1;34m*******************************"
 echo "Installing Brave"
@@ -122,7 +121,7 @@ echo -e "*******************************\e[0m"
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
-sudo apt install brave-browser
+sudo apt install -y brave-browser
 
 # neofetch/htop
 echo -e "\e[1;34m*******************************"
@@ -191,4 +190,5 @@ fi
 
 # Define o Zsh como o shell padrão para o usuário atual
 chsh -s /usr/bin/zsh
-logout
+
+source ~/dotfiles_/nerdfontinstall.sh
