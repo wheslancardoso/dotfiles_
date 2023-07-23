@@ -91,6 +91,9 @@ echo -e "\e[1;34m*******************************"
 echo "Installing zsh"
 echo -e "*******************************\e[0m"
 sudo nala install -y zsh
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+sudo rm -rf ~/.zshrc
+mv ~/.zshrc* ./.zshrc
 
 # alacritty install
 echo -e "\e[1;34m*******************************"
@@ -137,7 +140,16 @@ sudo nala install -y nitrogen
 echo -e "\e[1;34m*******************************"
 echo "Updating home user directories"
 echo -e "*******************************\e[0m"
+cd
 sudo nala install -y xdg-user-dirs
+mkdir ~/desktop
+mkdir ~/downloads
+mkdir ~/docs
+mkdir ~/templates
+mkdir ~/public
+mkdir ~/music
+mkdir ~/pics
+mkdir ~/videos
 sudo xdg-user-dirs-update
 
 # Install Ly Console Display Manager
