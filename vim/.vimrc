@@ -12,17 +12,9 @@ set cursorline  " Realça a linha atual
 set showmatch   " Realça o parêntese correspondente
 set ignorecase  " Ignora diferenças de caixa na pesquisa
 set smartcase   " Ignora diferenças de caixa se a pesquisa for toda minúscula
-set guicursor=n-v-c:ver25-iCursor-blinkwait300-blinkon175-blinkoff150
-
-
-call plug#begin()
-Plug 'dracula/vim', { 'as': 'dracula' }
-call plug#end()
-colorscheme dracula
+#set guicursor=n-v-c:ver25-iCursor-blinkwait300-blinkon175-blinkoff150
 
 syntax on
 
 set termguicolors
-set background=dark
-highlight Normal guifg=#f8f8f2 guibg=#282a36
 
