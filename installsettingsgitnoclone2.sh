@@ -91,9 +91,9 @@ echo -e "\e[1;34m*******************************"
 echo "Installing zsh"
 echo -e "*******************************\e[0m"
 sudo nala install -y zsh
-zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
-sudo rm -rf ~/.zshrc
-mv ~/.zshrc* ./.zshrc
+#zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+#sudo rm -rf ~/.zshrc
+#mv ~/.zshrc* ./.zshrc
 
 # alacritty install
 echo -e "\e[1;34m*******************************"
