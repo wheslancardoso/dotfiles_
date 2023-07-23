@@ -2,67 +2,99 @@
 
 # system
 # Network File Tools/System Events
+echo -e "\e[1;34m*******************************"
 echo "Installing network File Tools/System Events"
+echo "*******************************\e[0m"
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends gvfs-fuse
 
 # install nala (alternative to apt)
+echo -e "\e[1;34m*******************************"
 echo "Installing nala"
+echo -e "*******************************\e[0m"
 sudo apt install -y nala
 
 # audio
+echo -e "\e[1;34m*******************************"
 echo "Installing audio packages"
+echo -e "*******************************\e[0m"
 sudo nala install -y pulseaudio pavucontrol
 
 # microcode for amd | intel | nvidia
 # sudo nala install -y intel-microcode
+echo -e "\e[1;34m*******************************"
 echo "Installing cpu microcode"
+echo -e "*******************************\e[0m"
 sudo nala install -y amd64-microcode
 
 # install basic packages
+echo -e "\e[1;34m*******************************"
 echo "Installing basic packages"
+echo -e "*******************************\e[0m"
 sudo nala install -y build-essential curl make libpam0g-dev libxcb-xkb-dev
 
 # pip 3 install
+echo -e "\e[1;34m*******************************"
 echo "Installing pip3"
+echo -e "*******************************\e[0m"
 sudo apt -y install python3-pip
 
 # importing dotfiles
+echo -e "\e[1;34m*******************************"
 echo "Importing dotfiles"
+echo "*******************************\e[0m"
 sudo nala install -y stow
+echo -e "\e[1;34m*******************************"
 echo "Stowing dotfiles"
-stow alacritty dunst gtk-2.0 gtk-3.0 i3 neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs gtkrc-2.0 p10k X zsh gitconf 
+echo -e "*******************************\e[0m"
+stow alacritty dunst gtk-2.0 gtk-3.0 i3 neofetch nitrogen picom polybar rofi themes vifm redshift user-dirs gtkrc-2.0 p10k X zsh gitconf
 
 # network manager
+echo -e "\e[1;34m*******************************"
 echo "Installing network-manager applet"
+echo -e "*******************************\e[0m"
 sudo nala install -y network-manager-gnome
 
-# xorg display server 
+# xorg display server
+echo -e "\e[1;34m*******************************"
 echo "Installing xorg"
+echo -e "*******************************\e[0m"
 sudo nala install -y xorg
 
 # i3 base
+echo -e "\e[1;34m*******************************"
 echo "Instaling i3 essential packages"
-sudo nala install -y i3 i3status polybar dmenu picom rofi dunst arandr unzip vim 
+echo -e "*******************************\e[0m"
+sudo nala install -y i3 i3status polybar dmenu picom rofi dunst arandr unzip vim
 
-# apperancy 
+# apperancy
+echo -e "\e[1;34m*******************************"
 echo "Installing lxappearance"
+echo -e "*******************************\e[0m"
 sudo nala install -y lxappearance
 
 # other tools
+echo -e "\e[1;34m*******************************"
 echo "Installing useful tools (lxinput, gparted, copyq, flameshot)"
+echo -e "*******************************\e[0m"
 sudo nala install -y lxinput gparted copyq flameshot
 
 # file manager
+echo -e "\e[1;34m*******************************"
 echo "Installing thunar and vifm"
+echo -e "*******************************\e[0m"
 sudo nala install -y thunar vifm
 
 # terminal
 # sudo nala install -y xfce4-terminal
+echo -e "\e[1;34m*******************************"
 echo "Installing zsh"
+echo -e "*******************************\e[0m"
 sudo nala install -y zsh
 
 # alacritty install
+echo -e "\e[1;34m*******************************"
 echo "Installing Alacritty"
+echo -e "*******************************\e[0m"
 cd
 git clone https://github.com/alacritty/alacritty.git
 cd alacritty
@@ -80,26 +112,36 @@ sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
 
 # browser install
+echo -e "\e[1;34m*******************************"
 echo "Installing Brave"
+echo -e "*******************************\e[0m"
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser
 
 # neofetch/htop
+echo -e "\e[1;34m*******************************"
 echo "Installing neofetch and htop"
+echo -e "*******************************\e[0m"
 sudo nala install -y neofetch htop
 
 # background handler
+echo -e "\e[1;34m*******************************"
 echo "Installing nitrogen"
+echo -e "*******************************\e[0m"
 sudo nala install -y nitrogen
 
 # create folders in user directories
+echo -e "\e[1;34m*******************************"
 echo "Updating home user directories"
+echo -e "*******************************\e[0m"
 sudo xdg-user-dirs-update
 
 # Install Ly Console Display Manager
+echo -e "\e[1;34m*******************************"
 echo "Installing Ly Display Manager"
+echo -e "*******************************\e[0m"
 cd 
 cd downloads
 git clone --recurse-submodules https://github.com/fairyglade/ly
@@ -109,7 +151,9 @@ sudo make install installsystemd
 sudo systemctl enable ly.service
 
 # XSessions and i3.desktop
+echo -e "\e[1;34m*******************************"
 echo "Configuring XSessions"
+echo -e "*******************************\e[0m"
 if [[ ! -d /usr/share/xsessions ]]; then
     sudo mkdir /usr/share/xsessions
 fi
