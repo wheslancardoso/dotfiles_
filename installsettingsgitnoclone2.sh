@@ -12,6 +12,7 @@ echo -e "\e[1;34m*******************************"
 echo "Installing nala"
 echo -e "*******************************\e[0m"
 sudo apt install -y nala
+sudo nala fetch
 
 # audio
 echo -e "\e[1;34m*******************************"
