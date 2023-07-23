@@ -182,3 +182,13 @@ Icon=i3
 Type=XSession
 EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
+
+# Verifica se o Zsh já está listado no arquivo /etc/shells
+if ! grep -Fxq "/usr/bin/zsh" /etc/shells; then
+    # Adiciona o Zsh ao arquivo /etc/shells
+    echo "/usr/bin/zsh" | sudo tee -a /etc/shells
+fi
+
+# Define o Zsh como o shell padrão para o usuário atual
+chsh -s /usr/bin/zsh
+logout
