@@ -137,6 +137,7 @@ sudo nala install -y nitrogen
 echo -e "\e[1;34m*******************************"
 echo "Updating home user directories"
 echo -e "*******************************\e[0m"
+sudo nala install -y xdg-user-dirs
 sudo xdg-user-dirs-update
 
 # Install Ly Console Display Manager
