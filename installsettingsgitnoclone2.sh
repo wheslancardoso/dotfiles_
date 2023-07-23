@@ -59,7 +59,7 @@ sudo nala install -y thunar vifm
 # terminal
 # sudo nala install -y xfce4-terminal
 echo "Installing zsh"
-sudo nala install zsh
+sudo nala install -y zsh
 
 # alacritty install
 echo "Installing Alacritty"
