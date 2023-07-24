@@ -45,7 +45,7 @@ echo "Importing important dotfiles"
 echo "*******************************\e[0m"
 sudo nala install -y stow
 #stow alacritty dunst neofetch picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
-stow X gitconf
+stow X gitconf user-dirs
 
 # network manager
 echo -e "\e[1;34m*******************************"
