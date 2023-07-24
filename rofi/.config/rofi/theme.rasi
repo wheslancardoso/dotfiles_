@@ -34,8 +34,8 @@ window {
 	location: center;
 	width: 290px;
 	height: 445px;
-	x-offset: 4px;
-	y-offset: 26px;
+	x-offset: 10px;
+	y-offset: -130px;
 
 	background-color: @bg1;
 	border: 2px;

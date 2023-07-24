@@ -1,0 +1,15 @@
+2023/07/24-15:53:02.544 945 Reusing MANIFEST /home/cj/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/07/24-15:53:02.545 945 Recovering log #3
+2023/07/24-15:53:02.580 945 Reusing old log /home/cj/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000003.log 
+2023/07/24-15:54:13.616 92e Level-0 table #5: started
+2023/07/24-15:54:13.638 92e Level-0 table #5: 169946 bytes OK
+2023/07/24-15:54:13.674 92e Delete type=0 #3
+2023/07/24-16:09:26.230 922 Level-0 table #7: started
+2023/07/24-16:09:26.244 922 Level-0 table #7: 60485 bytes OK
+2023/07/24-16:09:26.262 922 Delete type=0 #4
+2023/07/24-16:27:32.125 930 Level-0 table #9: started
+2023/07/24-16:27:32.144 930 Level-0 table #9: 74589 bytes OK
+2023/07/24-16:27:32.190 930 Delete type=0 #6
+2023/07/24-16:48:45.703 930 Level-0 table #11: started
+2023/07/24-16:48:45.723 930 Level-0 table #11: 111890 bytes OK
+2023/07/24-16:48:45.751 930 Delete type=0 #8

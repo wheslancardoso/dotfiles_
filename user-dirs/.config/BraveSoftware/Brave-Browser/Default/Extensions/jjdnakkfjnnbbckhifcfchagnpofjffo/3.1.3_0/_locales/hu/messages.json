@@ -1,0 +1,442 @@
+{
+   "advertise_here": {
+      "message": "Hirdessen itt"
+   },
+   "advertisement": {
+      "message": ""
+   },
+   "all_categories": {
+      "message": "Összes kategória"
+   },
+   "all_prompts": {
+      "message": "- Öszes Prompt -"
+   },
+   "all_threads": {
+      "message": "Összes beszélgetés"
+   },
+   "appDesc": {
+      "message": "Fedezd fel, oszdd meg, importáld és használd a legjobb promptokat a ChatGPT-hez! Mentsd el a beszélgetési előzményeket helyben. (korábban ChatGPT History)."
+   },
+   "appName": {
+      "message": "AI Prompt Genius"
+   },
+   "archive_files": {
+      "message": "Ezek a fájlok használatban vannak a Promptok és az előzmények helyreállításához. Az Export összes opció a Promptok, az előzmények és a beállítások exportálását tartalmazza."
+   },
+   "auto_delete_threads": {
+      "message": "Automatikus törlés (nem könyvjelzőzött) szálak 30 nap után"
+   },
+   "auto_send_note": {
+      "message": "Az ösztönző használatakor az üzenet automatikusan elküldődik, amikor a folytatás gombra kattint."
+   },
+   "auto_send_prompt": {
+      "message": "Az üzenet automatikus elküldése az ösztönző használatakor"
+   },
+   "bookmark_conversation": {
+      "message": "Beszélgetés könyvjelzőzése későbbi használatra"
+   },
+   "bookmarks": {
+      "message": "Könyvjelzők"
+   },
+   "category": {
+      "message": "Kategória"
+   },
+   "category_academic_writing": {
+      "message": "Akadémiai írás"
+   },
+   "category_bypass_personas": {
+      "message": "Bypass és Személyiségek"
+   },
+   "category_education_learning": {
+      "message": "Oktatás és Tanulás"
+   },
+   "category_expert_consultant": {
+      "message": "Szakértő/Tanácsadó"
+   },
+   "category_fiction_writing": {
+      "message": "Fikció írás"
+   },
+   "category_fitness_nutrition_health": {
+      "message": "Fitness, Táplálkozás és Egészség"
+   },
+   "category_fun_games": {
+      "message": "Szórakozás és Játékok"
+   },
+   "category_music": {
+      "message": "Zene"
+   },
+   "category_nonfiction_writing": {
+      "message": "Tudományos írás"
+   },
+   "category_other": {
+      "message": "Egyéb"
+   },
+   "category_philosophy_logic": {
+      "message": "Filozófia és logika"
+   },
+   "category_placeholder": {
+      "message": "Kategória..."
+   },
+   "category_poetry": {
+      "message": "Vers"
+   },
+   "category_programming_technology": {
+      "message": "Programozás és Technológia"
+   },
+   "category_social_media_blogging": {
+      "message": "Szociális média és blogolás"
+   },
+   "category_speeches_scripts": {
+      "message": "Beszédek és Forgatókönyvek"
+   },
+   "category_therapy_life_help": {
+      "message": "Terápia és életsegítés"
+   },
+   "category_travel": {
+      "message": "Utazás"
+   },
+   "chatgpt": {
+      "message": "ChatGPT"
+   },
+   "chatgpt_plus_user": {
+      "description": "Az alkalmazás megpróbálja ezt automatikusan érzékelni, de néha hibás lehet. Ne jelölje be, ha nem használja a ChatGPT Plus-t.",
+      "message": "ChatGPT Plus felhasználó vagyok"
+   },
+   "cloud_disclaimer": {
+      "message": "Megjegyzés: a szinkronizálás megfelelő működéséhez be kell jelentkezned ugyanazzal a Google fiókkal."
+   },
+   "cloud_note": {
+      "message": "Szinkronizálja a feladványait a Google Sheetsben található felhővel. Csak Chrome böngészővel működik."
+   },
+   "cloud_rearrange": {
+      "message": "Ha be van kapcsolva a szinkronizálás, akkor a kapcsolódó táblázatban húzdd a sorokat a Promptjaid átrendezéséhez."
+   },
+   "cloud_syncing": {
+      "message": "Felhő szinkronizálás"
+   },
+   "compact": {
+      "message": "Kompakt nézet"
+   },
+   "confirm_span": {
+      "message": "Megerősítés"
+   },
+   "continue_conversation": {
+      "message": "Folytassa a beszélgetést a ChatGPT-vel"
+   },
+   "copied": {
+      "message": "Másolva!"
+   },
+   "curated_prompts": {
+      "message": "Kezelt Promptok"
+   },
+   "dark": {
+      "message": "Sötét"
+   },
+   "default_continue": {
+      "message": "A következő egy párbeszéd tranzkriptuma köztem és a ChatGPT között. Használd a továbbiakban a kontextus megértéséhez és az előző válaszokon való szerkesztéshez. Válaszolj az 'Értettem.' kifejezéssel, ha megértetted a kontextust. Ne válaszoljon semmi másra. Párbeszéd:\n"
+   },
+   "default_continue_message": {
+      "message": "Alapértelmezett 'folytatás' üzenet"
+   },
+   "default_continue_message_note": {
+      "message": "Ez megjelenik a beszélgetés jegyzéke előtt, amikor a 'folytatás' gombra kattintasz. Figyelem: ez csak az előző December 15, 2022-es frissítés előtti beszélgetésekre vonatkozik."
+   },
+   "default_message": {
+      "message": "Alapértelmezett üzenet"
+   },
+   "delete_all_history_span": {
+      "message": "Összes előzmény törlése"
+   },
+   "delete_all_prompts_span": {
+      "message": "Az összes Prompt törlése"
+   },
+   "delete_prompt": {
+      "message": "Prompt törlése"
+   },
+   "delete_thread": {
+      "message": "Beszélgetés törlése"
+   },
+   "description": {
+      "message": "Leírás"
+   },
+   "disable_prompts_on_chatgpt": {
+      "description": "A sablonok nem jelennek meg a ChatGPT-n. Más Chrome-bővítményekkel használható.",
+      "message": "Kérdések letiltása a ChatGPT-n"
+   },
+   "disable_save_chat_history": {
+      "message": "Chat előzmények mentésének letiltása helyileg"
+   },
+   "discover": {
+      "message": "Promptok felfedezése"
+   },
+   "download": {
+      "message": "Letöltés"
+   },
+   "enter_tag": {
+      "message": "Címke hozzáadása"
+   },
+   "enter_val": {
+      "message": "Adj meg egy értéket a következőhöz:"
+   },
+   "entries": {
+      "message": "Bejegyzések"
+   },
+   "explore_curated_templates": {
+      "message": "Felfedezés"
+   },
+   "export": {
+      "message": "Exportálás"
+   },
+   "export_all": {
+      "message": "Mindent exportálás"
+   },
+   "export_conversation": {
+      "message": "A beszélgetés exportálása JSON formátumban"
+   },
+   "export_history": {
+      "message": "Előtmények exportálása"
+   },
+   "export_prompts": {
+      "message": "Promptok exportálása"
+   },
+   "export_settings": {
+      "message": "Beállítások exportálása"
+   },
+   "faq": {
+      "message": "GYIK"
+   },
+   "faq_bug_header": {
+      "message": "Hibát találtam!"
+   },
+   "faq_bug_text_part1": {
+      "message": "Sajnáljuk, hogy hibát tapasztaltál. Ha lehetőséged van rá, kérjük, jelentsd az problémát az"
+   },
+   "faq_bug_text_part2": {
+      "message": "GitHub tárolónkon keresztül"
+   },
+   "faq_bug_text_part3": {
+      "message": " és mi a lehető leghamarabb megoldjuk a problémát. Ha kedved van kalandhoz, nyugodtan küldhetsz egy 'Pull request'-et, hogy te magad oldd meg a problémát és segíts a projekt fejlesztésében!"
+   },
+   "faq_data_answer": {
+      "message": "Tudjuk, hogy az adataid fontosak számodra, és biztosítani szeretnénk róla, hogy teljes mértékben a te ellenőrzésed alatt állnak. Az összes adatod helyileg tárolódik az eszközödön, és nem állítunk igényt semmilyen tulajdonjogot rá. Ezen kívül nincs hozzáférésünk az adataidhoz (nincsenek szervereink), mivel azok kizárólag az eszközöd helyi tárolójában vannak tárolva. Ha úgy döntesz, hogy megosztasz egy chatet, az az egy ShareGPT szerverre kerül feltöltésre, de továbbra is megmaradnak az adataidhoz való jogaid. Bármikor exportálhatod az adataidat a nyers JSON formátumban, és dolgozunk azon is, hogy több exportálási formátumot is hozzáadjunk a kényelmed érdekében."
+   },
+   "faq_data_header": {
+      "message": "Mit csináltok az adataimmal?"
+   },
+   "faq_data_shared_answer": {
+      "message": "Csak akkor hagyja el az eszközét az adat, ha az \"exportálás\" gombot használja. Ekkor a helyi adatokat átmenetileg egy szerverre töltjük fel, azonban az adatokat semmilyen célból nem használjuk fel, nem tároljuk és nem osztjuk meg őket harmadik féllel."
+   },
+   "faq_data_shared_header": {
+      "message": "Van-e más adat, amely megosztódik?"
+   },
+   "faq_delete_header": {
+      "message": "Tudok törölni valamit, amit megosztottam linken keresztül?"
+   },
+   "faq_feature_header": {
+      "message": "Van egy funkció ötletem!"
+   },
+   "faq_header": {
+      "message": "Gyakran Ismételt Kérdések"
+   },
+   "faq_improve_extension_text_part1": {
+      "message": "Mindig keressük azokat az ötleteket, amelyek javíthatják a bővítményünket, és szívesen hallanánk az ötleteid. Kérjük, használd a"
+   },
+   "faq_improve_extension_text_part2": {
+      "message": "GitHub tárolónkat"
+   },
+   "faq_improve_extension_text_part3": {
+      "message": " az ötleteid megosztására."
+   },
+   "faq_permissions_answer": {
+      "message": "Az egyetlen engedély, amit kérünk, az a saját subreddit-ünk, a r/ChatGPTPromptGenius-hoz szükséges, és csak azért, hogy formázni tudjuk, amikor promptokat küldesz be az alreddit-re. Ezen kívül beillesztünk egy gombot, amellyel gyorsan importálhatod mások promptjait. Semmilyen másik subreddit-en nem futtatunk szkripteket, és nem gyűjtünk adatot a redditről."
+   },
+   "faq_permissions_header": {
+      "message": "Miért igényel ez a kiterjesztés reddit engedélyeket?"
+   },
+   "faq_sharegpt_data": {
+      "message": "Sajnos a megosztott szolgáltatásainkhoz a ShareGPT nyilvános szervereit használjuk. Nincs módunk a hozzáférésre. Javasoljuk, hogy ne osszon meg semmilyen érzékeny információt."
+   },
+   "faq_we_header": {
+      "message": "Ki az a \"mi\"?"
+   },
+   "faq_we_text": {
+      "message": "Ez a projekt nyílt forráskódú, és sok fejlesztő hozzájárult már. Ha észreveszel valamit, amit javítani kell, segíthetsz az ügyön azáltal, hogy nyitsz egy 'Issue'-t vagy küldesz egy 'Pull request'-et."
+   },
+   "filter_category": {
+      "message": "Kategória szűrése..."
+   },
+   "force_resync": {
+      "message": "Kényszerített szinkronizálás"
+   },
+   "github": {
+      "message": "Github"
+   },
+   "help_translate": {
+      "message": "Segítsen lefordítani ezt a saját nyelvére, vagy javítson az automatikusan lefordított tartalmon."
+   },
+   "history": {
+      "message": "Előzmények"
+   },
+   "import_any": {
+      "message": "Bármelyik importálása"
+   },
+   "import_export_archive": {
+      "message": "Importálás/Exportálás - Archívum"
+   },
+   "import_prompt": {
+      "message": "Prompt importálása →"
+   },
+   "language": {
+      "message": "Nyelv"
+   },
+   "light": {
+      "message": "Világos"
+   },
+   "link": {
+      "message": "Hivatkozás"
+   },
+   "link_sheet": {
+      "message": "Összekapcsolás a Google Sheets-el"
+   },
+   "make_prompts_default_home": {
+      "message": "Promptok legyenek az alapértelmezett kezdőoldal"
+   },
+   "mass_delete_header": {
+      "message": "Veszélyzóna - Minden törlése"
+   },
+   "mass_delete_note": {
+      "message": "Minden mentett Prompt és beszélgetés törlése. Javasolt az exportálás!"
+   },
+   "mode": {
+      "message": "Mód"
+   },
+   "my_prompts": {
+      "message": "Saját Promptok"
+   },
+   "name": {
+      "message": "Név"
+   },
+   "new_prompt": {
+      "message": "Új Prompt"
+   },
+   "next": {
+      "message": "Következő"
+   },
+   "no_data": {
+      "message": "Nincs adat a jelenlegi beszélgetésben."
+   },
+   "no_font": {
+      "message": "Nincs betűtípus"
+   },
+   "no_theme": {
+      "message": "Nincs téma"
+   },
+   "of": {
+      "message": "/"
+   },
+   "placeholder": {
+      "message": "Írj egy üzenetet vagy a '/' karaktert a Prompt kiválasztásához..."
+   },
+   "prev": {
+      "message": "Előző"
+   },
+   "prompt": {
+      "message": "Felkérés"
+   },
+   "prompt_body": {
+      "message": "A felkérés tartalma. A változók jelöléséhez használja a {{}} jelet. Példa: {{name}} egy {{adjective}} {{noun}}"
+   },
+   "prompt_name": {
+      "message": "Prompt elnevezése"
+   },
+   "prompt_tags": {
+      "message": "Címkék a Prompthoz. Vesszővel válaszdd el őket, de ne tegyél szóközt közéjük!"
+   },
+   "prompts": {
+      "message": "Promptok"
+   },
+   "public_prompts": {
+      "message": "Nyilvános Promptok"
+   },
+   "resync_all": {
+      "message": "Összes újraszinkronizálása"
+   },
+   "resync_interim": {
+      "message": "Ez az oldal átmeneti jelleggel szolgál a szinkronizálás elválasztására, miközben néhány hibát javítunk. Kattints a 'Minden szinkronizálása' lehetőségre az újrafelvételhez az összes korábbi párbeszéddel a ChatGPT-vel."
+   },
+   "resyncing": {
+      "message": "Szinkronizálás..."
+   },
+   "save": {
+      "message": "Mentés"
+   },
+   "search_prompts": {
+      "message": "Promptok keresése..."
+   },
+   "search_threads": {
+      "message": "Beszélgetés keresése..."
+   },
+   "settings": {
+      "message": "Beállítások"
+   },
+   "share": {
+      "message": "Megosztás"
+   },
+   "share_reddit": {
+      "message": "Megosztás Reddit-en"
+   },
+   "show_export_button_dropdown": {
+      "message": "Export gomb lenyíló menü megjelenítése"
+   },
+   "showing": {
+      "message": "Mutatás"
+   },
+   "storage": {
+      "message": "Tárolás"
+   },
+   "submit": {
+      "message": "Elküldés"
+   },
+   "tags": {
+      "message": "Címkék"
+   },
+   "templates_title": {
+      "message": "ChatGPT Prompt Genius Sablonok"
+   },
+   "theme_settings": {
+      "message": "Téma beállítások"
+   },
+   "tip_jar": {
+      "message": "Persely"
+   },
+   "to": {
+      "message": "ide:"
+   },
+   "tutorial": {
+      "message": "Útmutató"
+   },
+   "unlink": {
+      "message": "Táblázat szétkapcsolása"
+   },
+   "untitled": {
+      "message": "Cím nélküli Prompt"
+   },
+   "use_ctrl_enter_to_save": {
+      "message": "Használja a ctrl + enter (vagy ⌘ + enter Mac-en) billentyűkombinációt az ösztönzők mentéséhez (az enter helyett)."
+   },
+   "use_prompt": {
+      "message": "Prompt használata"
+   },
+   "use_visual_editor_on_reddit": {
+      "message": "Használja a vizuális szövegszerkesztőt a Reddit-en (az ösztönzők megosztásához)"
+   },
+   "view_linked": {
+      "message": "Kapcsolódó táblázat megtekintése"
+   },
+   "welcome_history": {
+      "message": "Üdvözlünk! Itt jelenik meg a beszélgetési előzményed. A szinkronizálás megkezdéséhez nyisdd meg a ChatGPT-t."
+   },
+   "what_new": {
+      "message": "Mi az újdonság?"
+   }
+}

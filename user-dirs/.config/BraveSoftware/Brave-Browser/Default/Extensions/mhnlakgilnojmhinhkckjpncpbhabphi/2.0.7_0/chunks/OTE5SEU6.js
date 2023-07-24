@@ -1,0 +1,1 @@
+import{a as n}from"./BIAB2ZEP.js";import{e as u}from"./O5NYTI7P.js";var r=u(n());var t=u(n()),i=typeof window!="undefined"?t.useLayoutEffect:t.useEffect,s=i;function m(o,e){let f=(0,r.useRef)(o);s(()=>{f.current=o},[o]),(0,r.useEffect)(()=>{if(!e&&e!==0)return;let c=setInterval(()=>f.current(),e);return()=>clearInterval(c)},[e])}var d=m;export{d as a};

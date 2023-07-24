@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_title": "Open ChatGPT"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "content_script.js" ],
+      "matches": [ "https://chat.openai.com/chat/*" ]
+   } ],
+   "description": "Enhanced ChatGPT extension adds new features to ChatGPT, including chat export and prompt templates. A must-have for ChatGPT users.",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "80": "icons/80.png",
+      "96": "icons/96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApDmzGtRFGX64L+J8WtYdwXuCq//Hj+la65HyIidEMjOjT+UuTmdEfMPExD44ZwjNfyV/jFmprseB241SPa2flbiOpYI5G0iX79Gd3+wHVAQedM7dGArT/ZP5FxL4B78OLSdl8M9AkEQ0m/tJM5qn/n4028sjnG+JXZR2T2ePO52OnWLm19nsaJyI2AHKkO3ent75Z8iayYLEQJTG/MM7whsFo/HDCfhM8wIRhTELFUkEPwb2fWThqIRFuYYay03S1+OjcG06HTkmnM8+lE64MPsqUVSrwrxM+LAF7IYGmhmXWD8z/leHEECvDXIY2ScGoBT908V7RCmWnr+sa+Ow6wIDAQAB",
+   "manifest_version": 3,
+   "name": "Enhanced ChatGPT",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.15.3.5",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/inject.js" ],
+      "use_dynamic_url": true
+   } ]
+}

@@ -1,0 +1,5 @@
+2023/07/24-15:36:37.230 5 Creating DB /home/cj/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb since it was missing.
+2023/07/24-15:36:37.272 5 Reusing MANIFEST /home/cj/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2023/07/24-15:37:56.627 5 Level-0 table #5: started
+2023/07/24-15:37:56.637 5 Level-0 table #5: 53818 bytes OK
+2023/07/24-15:37:56.656 5 Delete type=0 #3
