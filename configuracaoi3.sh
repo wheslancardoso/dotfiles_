@@ -38,4 +38,4 @@ rm -rf ~/.vimrc
 rm -rf ~/.p10k.zsh
 
 cd ~/dotfiles_/
-stow i3 gtk* neofetch nitrogen picom polybar qt5ct redshift rofi dunst alacritty themes vim vifm mpv lvim ideavim
+stow i3 gtk* neofetch picom polybar qt5ct redshift rofi dunst alacritty themes vim vifm mpv lvim ideavim
