@@ -41,10 +41,11 @@ sudo apt -y install python3-pip
 
 # importing dotfiles
 echo -e "\e[1;34m*******************************"
-echo "Importing dotfiles"
+echo "Importing important dotfiles"
 echo "*******************************\e[0m"
 sudo nala install -y stow
-stow alacritty dunst neofetch picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
+#stow alacritty dunst neofetch picom polybar rofi themes vifm redshift user-dirs X zsh gitconf
+stow X gitconf
 
 # network manager
 echo -e "\e[1;34m*******************************"
@@ -74,7 +75,7 @@ sudo nala install -y lxappearance qt5ct
 echo -e "\e[1;34m*******************************"
 echo "Installing useful tools (lxinput, gparted, copyq, flameshot)"
 echo -e "*******************************\e[0m"
-sudo nala install -y lxinput gparted copyq flameshot
+sudo nala install -y lxinput gparted copyq flameshot exa bat
 
 # file manager
 echo -e "\e[1;34m*******************************"
@@ -101,19 +102,18 @@ sudo cp -r target/release/alacritty /usr/local/bin # or anywhere else in $PATH
 sudo cp -r extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
+cd
+rm -rf alacritty
 
 # terminal
 # sudo nala install -y xfce4-terminal
-echo -e "\e[1;34m*******************************"
-echo "Installing zsh"
-echo -e "*******************************\e[0m"
-cd
-sudo nala install -y zsh
-zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
-sudo rm -rf ~/.zshrc
-mv ~/.zshrc* ./.zshrc
-sudo nala install -y exa
-sudo nala install -y bat
+# echo -e "\e[1;34m*******************************"
+# echo "Installing zsh"
+# echo -e "*******************************\e[0m"
+# sudo nala install -y zsh
+# zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+# sudo rm -rf ~/.zshrc
+# mv ~/.zshrc* ./.zshrc
 
 # browser install
 echo -e "\e[1;34m*******************************"
@@ -184,13 +184,13 @@ EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 
 # Verifica se o Zsh já está listado no arquivo /etc/shells
-if ! grep -Fxq "/usr/bin/zsh" /etc/shells; then
-    # Adiciona o Zsh ao arquivo /etc/shells
-    echo "/usr/bin/zsh" | sudo tee -a /etc/shells
-fi
-
-# Define o Zsh como o shell padrão para o usuário atual
-chsh -s /usr/bin/zsh
+# if ! grep -Fxq "/usr/bin/zsh" /etc/shells; then
+#     # Adiciona o Zsh ao arquivo /etc/shells
+#     echo "/usr/bin/zsh" | sudo tee -a /etc/shells
+# fi
+# 
+# # Define o Zsh como o shell padrão para o usuário atual
+# chsh -s /usr/bin/zsh
 
 source ~/dotfiles_/nerdfontinstall.sh
 
