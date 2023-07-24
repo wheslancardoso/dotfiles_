@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir ~/.config
 echo -e "\e[1;34m*******************************"
 echo "Installing zsh"
 echo -e "*******************************\e[0m"
