@@ -1,1 +1,0 @@
-var script=document.createElement("script");script.async=!0,script.src="https://www.googletagmanager.com/gtag/js?id=G-ET3T731TEF";var m=document.getElementsByTagName("script")[0];function gtag(){dataLayer.push(arguments)}m.parentNode.insertBefore(script,m),window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-ET3T731TEF");
