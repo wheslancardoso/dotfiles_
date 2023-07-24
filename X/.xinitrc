@@ -4,7 +4,8 @@
 xrdb -merge ~/.Xresources
 
 # Configurações de teclado
-setxkbmap -layout br-abnt2 -option caps:swapescape
+setxkbmap -layout br -variant abnt2 
+setxkbmap -option caps:swapescape
 
 # Configurações de exibição
 xrandr --auto
