@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir ~/.local
+mkdir ~/.local/share
 mkdir ~/.local/share/fonts
 
 cd /tmp
