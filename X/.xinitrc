@@ -22,3 +22,5 @@ flameshot &
 # Configurações do compositor de janelas
 picom &
 
+# Iniciar o redshift
+exec redshift -m randr -O 2600:1900

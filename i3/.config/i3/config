@@ -40,7 +40,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 #exec setxkbmap -model abnt2 -layout br
 #exec xinput --set-prop 14 'libinput Accel Speed' -1,0
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
-exec --no-startup-id redshift
+#exec --no-startup-id redshift
 exec --no-startup-id /usr/lib/brave-bin/brave --password-store=basic %U
 
 #exec --no-startup-id feh bg-scale ~/Pictures/wallpaper/bg2.jpg
@@ -54,13 +54,13 @@ bindsym Print exec flameshot gui
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-exec --no-startup-id CopyQ
+exec --no-startup-id copyq
 
 ##################################
 ############# FONTS ##############
 ##################################
 
-font pango:SymbolaRegular 9
+font pango:ShureTechMono Nerd Font 9
 
 
 ##################################
