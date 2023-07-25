@@ -168,7 +168,7 @@ echo -e "\e[1;34m*******************************"
 echo "Instaling ACPI Wake Service Script"
 echo -e "*******************************\e[0m"
 
-echo '[Unit]
+sudo echo '[Unit]
 Description=ACPI Wake Service
 
 [Service]
