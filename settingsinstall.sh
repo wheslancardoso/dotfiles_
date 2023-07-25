@@ -192,6 +192,24 @@ sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 # # Define o Zsh como o shell padrão para o usuário atual
 # chsh -s /usr/bin/zsh
 
+
+echo -e "\e[1;34m*******************************"
+echo "Instaling ACPI Wake Service Script"
+echo -e "*******************************\e[0m"
+
+echo '[Unit]
+Description=ACPI Wake Service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "for i in $(cat /proc/acpi/wakeup | grep enabled | awk '\''{print $1}'\'' | xargs); do [ $i != PBTN ] && echo $i | tee /proc/acpi/wakeup; done"
+
+[Install]
+WantedBy=multi-user.target
+' | sudo tee /etc/systemd/system/acpi-wake.service
+systemctl start acpi-wake.service
+systemctl start enable acpi-wake.service
+
 source ~/dotfiles_/nerdfontinstall.sh
 
 #cd
