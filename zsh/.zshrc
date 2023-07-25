@@ -29,6 +29,9 @@ compinit
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+# EXEC
+#exec setxkbmap -option caps:swapescape
+
 # PATHS
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/usr/lib/xdg-utils"
@@ -41,6 +44,15 @@ export PATH="$HOME/.dotdrop:$PATH"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # ALIASES
+alias rl1='i3-msg "workspace 1; append_layout ~/.config/i3/layout.json"'
+
+# Package manager
+alias apti="sudo nala install -y "
+alias aptu="sudo nala update"
+alias aptg="sudo nala update && sudo nala upgrade"
+
+# Confs
+alias i3conf="vim ~/.config/i3/config"
 
 # Git
 alias gs="git status"
@@ -66,7 +78,7 @@ alias npmt='npm test'
 
 # ls with all the flags and bat
 alias ls="exa --icons -lah"
-alias bat="bat --style=auto"
+alias bat="bat --simple=auto"
 
 # cd up to directories
 alias .1="cd .."

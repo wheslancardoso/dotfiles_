@@ -5,7 +5,7 @@ echo -e "\e[1;34m*******************************"
 echo "Installing zsh"
 echo -e "*******************************\e[0m"
 cd
-sudo nala install -y zsh
+sudo pacman -S --noconfirm zsh
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 sudo rm -rf ~/.zshrc
 cd ~/dotfiles_/
@@ -40,15 +40,15 @@ rm -rf ~/.p10k.zsh
 cd ~/dotfiles_/
 stow i3 gtk* neofetch picom polybar qt5ct redshift rofi dunst alacritty themes vim vifm mpv lvim ideavim
 
+echo -e "\e[1;34m*******************************"
 echo "Setting up polkit"
-
-sudo usermod -aG sudo cj
-sudo nala install -y policykit-1
+echo -e "*******************************\e[0m"
+sudo usermod -aG wheel cj
+sudo pacman -S --noconfirm polkit
 sudo systemctl start polkit
 
 echo 'polkit.addRule(function(action, subject) {
-  if (subject.isInGroup("sudo")) {
+  if (subject.isInGroup("wheel")) {
     return polkit.Result.YES;
   }
 });' | sudo tee /etc/polkit-1/rules.d/99-custom.rules
-

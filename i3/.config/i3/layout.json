@@ -1,0 +1,43 @@
+// vim:ts=4:sw=4:et
+{
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 300,
+       "width": 500,
+       "x": 1411,
+       "y": 47
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 5,
+            "floating": "user_on",
+            "geometry": {
+               "height": 290,
+               "width": 490,
+               "x": 1493,
+               "y": 157
+            },
+            "marks": [],
+            "name": "i3-save-tree --worksp…fig/i3/layout.json... (2 linhas) — CopyQ",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^copyq$",
+               // "instance": "^copyq$",
+               // "machine": "^pcdeb$",
+               // "title": "^i3\\-save\\-tree\\ \\-\\-worksp\\…fig\\/i3\\/layout\\.json\\.\\.\\.\\ \\(2\\ linhas\\)\\ \\—\\ CopyQ$",
+               // "window_role": "^main$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

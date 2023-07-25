@@ -12,6 +12,7 @@ set cursorline  " Realça a linha atual
 set showmatch   " Realça o parêntese correspondente
 set ignorecase  " Ignora diferenças de caixa na pesquisa
 set smartcase   " Ignora diferenças de caixa se a pesquisa for toda minúscula
+set relativenumber
 
 syntax on
 

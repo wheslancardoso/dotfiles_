@@ -14,6 +14,8 @@ set $mod Mod4
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+exec setxkbmap -option caps:swapescape
+exec setxkbmap -layout br -variant abnt2
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -21,9 +23,6 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -37,10 +36,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Configurações de tema GTK
 # Substitua "Dracula" pelo nome do tema que você está usando
 #exec --no-startup-id env GTK_THEME=Dracula gtk-settings-daemon
-exec setxkbmap -option caps:swapescape
 
 #exec setxkbmap -model abnt2 -layout br
-exec setxkbmap -layout br -variant abnt2
 #exec xinput --set-prop 14 'libinput Accel Speed' -1,0
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id redshift
@@ -54,6 +51,10 @@ set $menucmd rofi -show drun
 bindsym $mod+space exec --no-startup-id $menucmd
 bindsym Print exec flameshot gui
 
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+exec --no-startup-id CopyQ
 
 ##################################
 ############# FONTS ##############
@@ -86,6 +87,12 @@ bindsym $mod+$i3-wm.binding.files exec --no-startup-id $i3-wm.program.files
 
 # Launch web browser
 bindsym $mod+Shift+Return exec brave-browser
+
+
+############################################
+############# LAYOUT EXCEPTION #############
+###########################################k#
+for_window [class="copyq"] floating enable, move absolute position center top, resize set 500 300
 
 
 ################################################
