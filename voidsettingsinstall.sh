@@ -23,7 +23,7 @@ sudo xbps-install -Sy amd-ucode
 echo -e "\e[1;34m*******************************"
 echo "Installing basic packages"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy base-devel-void curl make libpam-devel libxcb-devel
+sudo xbps-install -Sy base-devel-void curl make libpam-devel libxcb-devel wget
 sudo xbps-install -Sy coreutils
 
 # pip 3 install
@@ -138,3 +138,34 @@ mkdir ~/music
 mkdir ~/pics
 mkdir ~/videos
 sudo xdg-user-dirs-update
+
+# Install Ly Console Display Manager
+echo -e "\e[1;34m*******************************"
+echo "Installing Ly Display Manager"
+echo -e "*******************************\e[0m"
+cd 
+cd downloads
+sudo xbps-install -Sy base-devel gcc xorg-server-devel libx11-devel libxft-devel libXext-devel make
+git clone --recurse-submodules https://github.com/fairyglade/ly
+cd ly/
+make
+sudo make install
+sudo ln -s /etc/sv/ly /var/service/
+
+# ... (remaining script content)
+
+# Install ACPI Wake Service Script
+echo -e "\e[1;34m*******************************"
+echo "Installing ACPI Wake Service Script"
+echo -e "*******************************\e[0m"
+
+sudo echo '#!/bin/sh
+for i in $(cat /proc/acpi/wakeup | grep enabled | awk '\''{print $1}'\''); do
+  [ $i != PBTN ] && echo $i > /proc/acpi/wakeup
+done' | sudo tee /etc/sv/acpi-wake/run
+sudo chmod +x /etc/sv/acpi-wake/run
+sudo ln -s /etc/sv/acpi-wake /var/service/
+
+source ~/dotfiles_/nerdfontinstall.sh
+
+# ... (remaining script content)
