@@ -17,7 +17,7 @@ sudo pacman -S --noconfirm dialog mtools dosfstools avahi acpi acpid gvfs gvfs-s
 echo -e "\e[1;34m*******************************"
 echo "Installing basic packages"
 echo "*******************************\e[0m"
-sudo pacman -S --noconfirm base-devel curl make libpam libxcb-xkb
+sudo pacman -S --noconfirm base-devel curl make wget
 
 echo -e "\e[1;34m*******************************"
 echo "Ordering Mirrors"
