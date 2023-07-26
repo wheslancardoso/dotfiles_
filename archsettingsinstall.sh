@@ -57,9 +57,9 @@ sudo pacman -S --noconfirm python-pip
 echo -e "\e[1;34m*******************************"
 echo "Importing important dotfiles"
 echo "*******************************\e[0m"
+sudo pacman -S --noconfirm stow
 cd
 cd dotfiles_/
-sudo pacman -S --noconfirm stow
 stow X gitconf user-dirs
 
 # Network manager
@@ -73,6 +73,7 @@ echo -e "\e[1;34m*******************************"
 echo "Installing Xorg"
 echo "*******************************\e[0m"
 sudo pacman -S --noconfirm xorg
+sudo pacman -S --noconfirm xorg-server xorg-xinit mesa
 
 # i3 base
 echo -e "\e[1;34m*******************************"
@@ -103,6 +104,12 @@ echo -e "\e[1;34m*******************************"
 echo "Installing Alacritty"
 echo "*******************************\e[0m"
 sudo pacman -S --noconfirm alacritty
+
+# neofetch/htop
+echo -e "\e[1;34m*******************************"
+echo "Installing neofetch and htop"
+echo -e "*******************************\e[0m"
+sudo pacman -S --noconfirm neofetch htop
 
 echo -e "\e[1;34m*******************************"
 echo "Installing brave"
