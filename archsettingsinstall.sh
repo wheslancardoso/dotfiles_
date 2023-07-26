@@ -57,7 +57,7 @@ sudo pacman -S --noconfirm python-pip
 echo -e "\e[1;34m*******************************"
 echo "Importing important dotfiles"
 echo "*******************************\e[0m"
-git clone https://github.com/wheslancardoso/dotfiles_.git
+cd
 cd dotfiles_/
 sudo pacman -S --noconfirm stow
 stow X gitconf user-dirs
