@@ -31,7 +31,7 @@ sudo nala install -y amd64-microcode
 echo -e "\e[1;34m*******************************"
 echo "Installing basic packages"
 echo -e "*******************************\e[0m"
-sudo nala install -y build-essential curl make libpam0g-dev libxcb-xkb-dev
+sudo nala install -y build-essential curl make libpam0g-dev libxcb-xkb-dev wget
 
 # pip 3 install
 echo -e "\e[1;34m*******************************"
