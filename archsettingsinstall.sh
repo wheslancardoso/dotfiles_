@@ -45,7 +45,7 @@ echo -e "\e[1;34m*******************************"
 echo "Installing CPU microcode"
 echo "*******************************\e[0m"
 sudo pacman -S --noconfirm amd-ucode
-
+sudo pacman -S xf86-video-amdgpu
 
 # Pip3 install
 echo -e "\e[1;34m*******************************"
