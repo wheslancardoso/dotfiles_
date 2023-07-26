@@ -139,10 +139,11 @@ sudo xdg-user-dirs-update
 echo -e "\e[1;34m*******************************"
 echo "Installing Ly Display Manager"
 echo "*******************************\e[0m"
-git clone --recurse-submodules https://github.com/fairyglade/ly
-cd ly/
-make
-sudo make install install-systemd
+#git clone --recurse-submodules https://github.com/fairyglade/ly
+#cd ly/
+#make
+#sudo make install install-systemd
+sudo pacman -S --noconfirm ly
 sudo systemctl enable ly.service
 
 # XSessions and i3.desktop
