@@ -33,14 +33,14 @@ echo -e "*******************************\e[0m"
 sudo xbps-install -Sy curl
 sudo xbps-install -Sy wget
 sudo xbps-install -Sy make
-sudo xpbs-install -Sy base-devel
-sudo xpbs-install -Sy gcc 
-sudo xpbs-install -Sy libXext-devel 
-sudo xpbs-install -Sy libXft-devel
+sudo xbps-install -Sy base-devel
+sudo xbps-install -Sy gcc 
+sudo xbps-install -Sy libXext-devel 
+sudo xbps-install -Sy libXft-devel
 sudo xbps-install -Sy libX11-devel
-sudo xpbs-install -Sy xorg-server-devel
-sudo xpbs-install -Sy mesa
-sudo xpbs-install -Sy coreutils
+sudo xbps-install -Sy xorg-server-devel
+sudo xbps-install -Sy mesa
+sudo xbps-install -Sy coreutils
 
 # pip 3 install
 echo -e "\e[1;34m*******************************"
