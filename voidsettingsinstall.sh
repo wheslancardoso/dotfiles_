@@ -5,13 +5,20 @@
 echo -e "\e[1;34m*******************************"
 echo "Installing network File Tools/System Events"
 echo "*******************************\e[0m"
-sudo xbps-install -Sy dialog mtools dosfstools avahi upower acpid gvfs
+sudo xbps-install -Sy dialog 
+sudo xbps-install -Sy mtools 
+sudo xbps-install -Sy dosfstools 
+sudo xbps-install -Sy avahi 
+sudo xbps-install -Sy upower 
+sudo xbps-install -Sy acpid 
+sudo xbps-install -Sy gvfs
 
 # audio
 echo -e "\e[1;34m*******************************"
 echo "Installing audio packages"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy pulseaudio pavucontrol
+sudo xbps-install -Sy pulseaudio 
+sudo xbps-install -Sy pavucontrol
 
 # microcode for amd | intel | nvidia
 echo -e "\e[1;34m*******************************"
@@ -21,10 +28,19 @@ sudo xbps-install -Sy amd-ucode
 
 # install basic packages
 echo -e "\e[1;34m*******************************"
-echo "Installing basic packages"
+echo "Installing important packages"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy base-devel-void curl make libpam-devel libxcb-devel wget
-sudo xbps-install -Sy coreutils
+sudo xbps-install -Sy curl
+sudo xbps-install -Sy wget
+sudo xbps-install -Sy make
+sudo xpbs-install -Sy base-devel
+sudo xpbs-install -Sy gcc 
+sudo xpbs-install -Sy libXext-devel 
+sudo xpbs-install -Sy libXft-devel
+sudo xbps-install -Sy libX11-devel
+sudo xpbs-install -Sy xorg-server-devel
+sudo xpbs-install -Sy mesa
+sudo xpbs-install -Sy coreutils
 
 # pip 3 install
 echo -e "\e[1;34m*******************************"
@@ -50,31 +66,49 @@ sudo xbps-install -Sy network-manager-applet
 echo -e "\e[1;34m*******************************"
 echo "Installing xorg"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy xorg xorg-server xorg-xinit mesa
+sudo xbps-install -Sy xorg 
+sudo xbps-install -Sy xorg-server 
+sudo xbps-install -Sy xorg-xinit 
+sudo xbps-install -Sy mesa
 
 # i3 base
 echo -e "\e[1;34m*******************************"
 echo "Installing i3 essential packages"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy i3 i3status polybar dmenu picom rofi dunst arandr unzip vim
+sudo xbps-install -Sy i3 
+sudo xbps-install -Sy i3status 
+sudo xbps-install -Sy polybar 
+sudo xbps-install -Sy dmenu 
+sudo xbps-install -Sy picom 
+sudo xbps-install -Sy rofi 
+sudo xbps-install -Sy dunst 
+sudo xbps-install -Sy arandr 
+sudo xbps-install -Sy unzip 
+sudo xbps-install -Sy vim
 
 # appearance
 echo -e "\e[1;34m*******************************"
 echo "Installing lxappearance and qt5ct"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy lxappearance qt5ct
+sudo xbps-install -Sy lxappearance 
+sudo xbps-install -Sy qt5ct
 
 # other tools
 echo -e "\e[1;34m*******************************"
 echo "Installing useful tools (lxinput, gparted, copyq, flameshot)"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy xinput gparted copyq flameshot lsd
+sudo xbps-install -Sy lxinput 
+sudo xbps-install -Sy gparted
+sudo xbps-install -Sy flameshot
+sudo xbps-install -Sy exa
+sudo xbps-install -Sy bat
 
 # file manager
 echo -e "\e[1;34m*******************************"
-echo "Installing thunar and vifm"
+echo "Installing nemo and vifm"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy thunar vifm
+sudo xbps-install -Sy nemo 
+sudo xbps-install -Sy vifm
 
 # alacritty install
 echo -e "\e[1;34m*******************************"
@@ -101,21 +135,25 @@ rm -rf alacritty
 echo -e "\e[1;34m*******************************"
 echo "Installing Flatpak"
 echo -e "*******************************\e[0m"
+sudo ln -s /etc/sv/dbus /var/service/
+sudo sv restart dbus
+sudo groupadd -r dbus
+sudo usermod -aG dbus $USER
 sudo xbps-install -Sy flatpak
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # browser install
 echo -e "\e[1;34m*******************************"
 echo "Installing Browser"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy firefox
 flatpak install flathub com.brave.Browser
 
 # neofetch/htop
 echo -e "\e[1;34m*******************************"
 echo "Installing neofetch and htop"
 echo -e "*******************************\e[0m"
-sudo xbps-install -Sy neofetch htop
+sudo xbps-install -Sy neofetch 
+sudo xbps-install -Sy htop
 
 # background handler
 echo -e "\e[1;34m*******************************"
@@ -145,7 +183,6 @@ echo "Installing Ly Display Manager"
 echo -e "*******************************\e[0m"
 cd 
 cd downloads
-sudo xbps-install -Sy base-devel gcc xorg-server-devel libx11-devel libxft-devel libXext-devel make
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly/
 make
@@ -158,7 +195,6 @@ sudo ln -s /etc/sv/ly /var/service/
 echo -e "\e[1;34m*******************************"
 echo "Installing ACPI Wake Service Script"
 echo -e "*******************************\e[0m"
-
 sudo echo '#!/bin/sh
 for i in $(cat /proc/acpi/wakeup | grep enabled | awk '\''{print $1}'\''); do
   [ $i != PBTN ] && echo $i > /proc/acpi/wakeup
@@ -169,3 +205,31 @@ sudo ln -s /etc/sv/acpi-wake /var/service/
 source ~/dotfiles_/nerdfontinstall.sh
 
 # ... (remaining script content)
+# não instalou
+# curl
+# make 
+# wget
+# base-devel e não base-devel-void
+# libXext-devel
+# libXft-devel
+# base-devel
+# xorg-server-devel
+# mesa
+# xinput (lxinput também pode ser instalado)
+
+# gparted
+# flameshot
+# exa (pode ser instalado)
+# bat (pode ser instalado)
+# nemo (pode ser instalado) alternativa ao thunar
+# vifm
+
+# para instalar o flatpak:
+# sudo ln -s /etc/sv/dbus /var/service/
+# sudo sv restart dbus
+# sudo groupadd -r dbus
+# sudo usermod -aG dbus cj
+# sudo xbps-install -Sy flatpak
+# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# e então instale o brave:
+# flatpak install flathub com.brave.Browser
