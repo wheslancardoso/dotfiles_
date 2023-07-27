@@ -146,7 +146,7 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 echo -e "\e[1;34m*******************************"
 echo "Installing Browser"
 echo -e "*******************************\e[0m"
-flatpak install flathub com.brave.Browser
+sudo flatpak install flathub com.brave.Browser
 
 # neofetch/htop
 echo -e "\e[1;34m*******************************"
