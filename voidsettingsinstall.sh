@@ -38,6 +38,7 @@ sudo xbps-install -Sy gcc
 sudo xbps-install -Sy libXext-devel 
 sudo xbps-install -Sy libXft-devel
 sudo xbps-install -Sy libX11-devel
+sudo xbps-install -Sy pam-libs
 sudo xbps-install -Sy xorg-server-devel
 sudo xbps-install -Sy mesa
 sudo xbps-install -Sy coreutils
