@@ -186,7 +186,7 @@ cd downloads
 git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly/
 make
-sudo make install
+sudo make installrunit
 sudo ln -s /etc/sv/ly /var/service/
 
 # ... (remaining script content)
