@@ -195,6 +195,9 @@ sudo ln -s /etc/sv/ly /var/service/
 echo -e "\e[1;34m*******************************"
 echo "Installing ACPI Wake Service Script"
 echo -e "*******************************\e[0m"
+
+sudo mkdir -p /etc/sv/acpi-wake
+
 sudo echo '#!/bin/sh
 for i in $(cat /proc/acpi/wakeup | grep enabled | awk '\''{print $1}'\''); do
   [ $i != PBTN ] && echo $i > /proc/acpi/wakeup
