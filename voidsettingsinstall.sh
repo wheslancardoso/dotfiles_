@@ -202,7 +202,7 @@ done' | sudo tee /etc/sv/acpi-wake/run
 sudo chmod +x /etc/sv/acpi-wake/run
 sudo ln -s /etc/sv/acpi-wake /var/service/
 
-source ~/dotfiles_/nerdfontinstall.sh
+# source ~/dotfiles_/nerdfontinstall.sh
 
 # ... (remaining script content)
 # não instalou
