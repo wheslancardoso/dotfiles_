@@ -89,7 +89,7 @@ alias .3="cd ../../.."
 alias mkdir="mkdir -pv"
 
 # zsh
-alias zshconf="vim ~/.zshrc" # open .zshrc to edit
+alias zshconf="lvim ~/.zshrc" # open .zshrc to edit
 alias zshreload="source ~/.zshrc" # reload .zshrc to apply changes
 
 # video 
@@ -99,3 +99,7 @@ alias playmkv="vlc *.mkv"
 
 # flatpaks 
 alias vlc="flatpak run org.videolan.VLC"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

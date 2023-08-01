@@ -10,9 +10,8 @@ set.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,te
 
 lvim.log.level = "warn" -- This sets the log level to 'warn', which will only display warning messages or higher.
 lvim.format_on_save.enabled = false -- This disables automatic formatting of code on save.
-lvim.colorscheme = "dracula" -- This sets the color scheme.
 lvim.builtin.terminal.direction = "horizontal" -- This sets the direction of the built-in terminal window to be horizontal.
-lvim.lsp.diagnostics.virtual_text = false -- This disables virtual text for LSP diagnostics.
+-- lvim.lsp.diagnostics.virtual_text = false -- This disables virtual text for LSP diagnostics.
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",

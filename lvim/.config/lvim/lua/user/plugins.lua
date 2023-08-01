@@ -13,9 +13,16 @@ lvim.plugins = {
   { "ayu-theme/ayu-vim" },
   { "Mofiqul/dracula.nvim"},
   { "tiagovla/tokyodark.nvim"},
+  { "catppuccin/nvim" },
 
   -- highlight colors like  #ffcc00
   { "norcalli/nvim-colorizer.lua"},
+  {
+    "brenoprata10/nvim-highlight-colors",
+    config = function()
+      require('nvim-highlight-colors').setup()
+    end
+  },
 
 
   ------------------------------------
