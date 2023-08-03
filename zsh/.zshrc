@@ -44,6 +44,7 @@ export PATH="$HOME/.dotdrop:$PATH"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # ALIASES
+alias vim="nvim"
 alias rl1='i3-msg "workspace 1; append_layout ~/.config/i3/layout.json"'
 
 # Package manager
@@ -58,7 +59,8 @@ alias i3conf="vim ~/.config/i3/config"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
-alias gp="git pull"
+alias gps="git push"
+alias gpl="git pull"
 alias gl="git log --oneline --all --graph"
 
 # Docker
