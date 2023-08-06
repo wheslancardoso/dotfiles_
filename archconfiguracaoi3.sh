@@ -22,6 +22,19 @@ fi
 chsh -s /usr/bin/zsh
 
 echo -e "\e[1;34m*******************************"
+echo "Installing Neovim and AstroNvim"
+echo -e "*******************************\e[0m"
+sudo pacman -S --noconfirm neovim
+sudo pacman -S --noconfirm rustup
+rustup-init
+cargo install tree-sitter-cli
+sudo pacman -S --noconfirm ripgrep
+sudo pacman -S --noconfirm lazygit
+
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone https://github.com/wheslancardoso/astronvim.git ~/.config/nvim/lua/user
+
+echo -e "\e[1;34m*******************************"
 echo "Removing installed configs"
 echo -e "*******************************\e[0m"
 rm -rf ~/.config/i3
@@ -43,7 +56,7 @@ stow i3 gtk* neofetch picom polybar qt5ct redshift rofi dunst alacritty themes v
 echo -e "\e[1;34m*******************************"
 echo "Setting up polkit"
 echo -e "*******************************\e[0m"
-sudo usermod -aG wheel cj
+sudo usermod -aG wheel $USER
 sudo pacman -S --noconfirm polkit
 sudo systemctl start polkit
 

@@ -21,6 +21,34 @@ fi
 # Define o Zsh como o shell padrão para o usuário atual
 chsh -s /usr/bin/zsh
 
+
+echo -e "\e[1;34m*******************************"
+echo "Installing Neovim and Astronvim"
+echo -e "*******************************\e[0m"
+cd
+sudo nala install ninja-build gettext cmake unzip curl
+git clone https://github.com/neovim/neovim
+cd neovim
+git checkout stable
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+cd
+
+sudo nala install rustc -y
+
+sudo nala install ripgrep -y 
+
+echo -e "\e[1;34m*******************************"
+echo "Installing lazygit"
+echo -e "*******************************\e[0m"
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
+
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone https://github.com/wheslancardoso/astronvim.git ~/.config/nvim/lua/user
+
 echo -e "\e[1;34m*******************************"
 echo "Removing installed configs"
 echo -e "*******************************\e[0m"
@@ -40,9 +68,12 @@ rm -rf ~/.p10k.zsh
 cd ~/dotfiles_/
 stow i3 gtk* neofetch picom polybar qt5ct redshift rofi dunst alacritty themes vim vifm mpv lvim ideavim
 
-echo "Setting up polkit"
 
-sudo usermod -aG sudo cj
+echo -e "\e[1;34m*******************************"
+echo "Setting up polkit"
+echo -e "*******************************\e[0m"
+
+sudo usermod -aG sudo $USER
 sudo nala install -y policykit-1
 sudo systemctl start polkit
 
