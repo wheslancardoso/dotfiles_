@@ -60,6 +60,9 @@ echo "*******************************\e[0m"
 sudo pacman -S --noconfirm stow
 cd
 cd dotfiles_/
+sudo rm -rf ~/.config/user-dirs.dirs
+sudo rm -rf ~/.xinitrc
+sudo rm -rf ~/.xprofile
 stow X gitconf user-dirs
 
 # Network manager
