@@ -4,14 +4,6 @@ echo "Installing my apps"
 echo -e "*******************************\e[0m"
 cd
 
-if ! grep -Fxq "/usr/bin/zsh" /etc/shells; then
-	# adiciona o zsh ao arquivo /etc/shells
-	echo "/usr/bin/zsh" | sudo tee -a /etc/shells
-fi
-
-# Define o zhs como shell padrao para o usuario atual
-chsh -s /usr/bin/zsh
-
 sudo pacman -S --noconfirm neovim
 sudo pacman -S --noconfirm rustup
 rustup-init
@@ -40,8 +32,18 @@ sudo pacman -S --noconfirm rofi
 sudo pacman -S --noconfirm dunst
 sudo pacman -S --noconfirm arandr
 sudo pacman -S --noconfirm unzip
+sudo pacman -S --noconfirm zip
 sudo pacman -S --noconfirm tar
 sudo pacman -S --noconfirm xdg-user-dirs
+sudo pacman -S --noconfirm stow
+
+if ! grep -Fxq "/usr/bin/zsh" /etc/shells; then
+	# adiciona o zsh ao arquivo /etc/shells
+	echo "/usr/bin/zsh" | sudo tee -a /etc/shells
+fi
+
+# Define o zhs como shell padrao para o usuario atual
+chsh -s /usr/bin/zsh
 
 git clone https://aur.archlinux.org/yay.git
 cd yay/
@@ -79,3 +81,36 @@ mkdir ~/music
 mkdir ~/pics
 mkdir ~/videos
 sudo xdg-user-dirs-update
+
+# XSessions and i3.desktop
+echo -e "\e[1;34m*******************************"
+echo "Configuring XSessions"
+echo "*******************************\e[0m"
+if [[ ! -d /usr/share/xsessions ]]; then
+    sudo mkdir /usr/share/xsessions
+fi
+
+cat > ./temp << "EOF"
+[Desktop Entry]
+Encoding=UTF-8
+Name=i3
+Comment=Dynamic window manager
+Exec=i3
+Icon=i3
+Type=XSession
+EOF
+sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
+
+cat > ./temp << "EOF"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=XFCE
+Comment=XFCE Desktop Environment
+Exec=startxfce4
+Icon=xfce4-panel
+Terminal=false
+Categories=System;
+EOF
+sudo cp ./temp /usr/share/xsessions/xfce.desktop;rm ./temp
+
