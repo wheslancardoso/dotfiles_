@@ -17,6 +17,7 @@ plug "hlissner/zsh-autopair"
 plug "zsh-users/zsh-history-substring-search"
 plug "MichaelAquilina/zsh-you-should-use"
 plug "zap-zsh/vim"
+plug "Aloxaf/fzf-tab"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -42,6 +43,7 @@ export PATH="$PATH:/.local/bin"
 export PATH="/var/lib/flatpak/exports/bin:$PATH"
 export PATH="$HOME/.dotdrop:$PATH"
 export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # ALIASES
 alias vim="nvim"
@@ -51,6 +53,7 @@ alias rl1='i3-msg "workspace 1; append_layout ~/.config/i3/layout.json"'
 alias apti="sudo nala install -y "
 alias aptu="sudo nala update"
 alias aptg="sudo nala update && sudo nala upgrade"
+alias pacman="sudo pacman"
 
 # Confs
 alias i3conf="vim ~/.config/i3/config"
@@ -81,6 +84,7 @@ alias npmt='npm test'
 # ls with all the flags and bat
 alias ls="exa --icons -lah"
 alias bat="bat --simple=auto"
+alias tree="tree -a"
 
 # cd up to directories
 alias .1="cd .."
@@ -91,7 +95,7 @@ alias .3="cd ../../.."
 alias mkdir="mkdir -pv"
 
 # zsh
-alias zshconf="lvim ~/.zshrc" # open .zshrc to edit
+alias zshconf="nvim ~/.zshrc" # open .zshrc to edit
 alias zshreload="source ~/.zshrc" # reload .zshrc to apply changes
 
 # video 

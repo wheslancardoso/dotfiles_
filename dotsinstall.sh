@@ -4,11 +4,11 @@ echo "Installing my apps"
 echo -e "*******************************\e[0m"
 cd
 
-sudo pacman -S --noconfirm neovim
-sudo pacman -S --noconfirm rustup
-rustup-init
-cargo install tree-sitter-cli
-sudo pacman -S --noconfirm ripgrep
+#sudo pacman -S --noconfirm neovim
+#sudo pacman -S --noconfirm rustup
+#rustup-init
+#cargo install tree-sitter-cli
+#sudo pacman -S --noconfirm ripgrep
 sudo pacman -S --noconfirm lazygit
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/wheslancardoso/astronvim.git ~/.config/nvim/lua/user
@@ -27,15 +27,15 @@ sudo pacman -S --noconfirm i3status
 sudo pacman -S --noconfirm polybar
 sudo pacman -S --noconfirm dmenu
 sudo pacman -S --noconfirm picom
-sudo pacman -S --noconfirm rofi
-sudo pacman -S --noconfirm rofi
+#sudo pacman -S --noconfirm rofi
+#sudo pacman -S --noconfirm rofi
 sudo pacman -S --noconfirm dunst
 sudo pacman -S --noconfirm arandr
 sudo pacman -S --noconfirm unzip
 sudo pacman -S --noconfirm zip
 sudo pacman -S --noconfirm tar
-sudo pacman -S --noconfirm xdg-user-dirs
-sudo pacman -S --noconfirm stow
+#sudo pacman -S --noconfirm xdg-user-dirs
+#sudo pacman -S --noconfirm stow
 
 if ! grep -Fxq "/usr/bin/zsh" /etc/shells; then
 	# adiciona o zsh ao arquivo /etc/shells

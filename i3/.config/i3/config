@@ -55,6 +55,8 @@ bindsym Print exec flameshot gui
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id copyq
+exec --no-startup-id export QT_QPA_PLATFORMTHEME=qt5ct
+
 
 ##################################
 ############# FONTS ##############
@@ -86,7 +88,7 @@ set_from_resource $i3-wm.program.files i3-wm.program.files thunar
 bindsym $mod+$i3-wm.binding.files exec --no-startup-id $i3-wm.program.files
 
 # Launch web browser
-bindsym $mod+Shift+Return exec brave-browser
+bindsym $mod+Shift+Return exec brave
 
 
 ############################################
