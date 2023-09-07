@@ -4,7 +4,8 @@
 xrdb -merge ~/.Xresources
 
 # Configurações do teclado
-setxkbmap -layout br-abnt2 -option caps:swapescape
+setxkbmap -layout br -variant abnt2
+setxkbmap -option caps:swapescape
 
 # Configurações de ambiente
 export PATH="$HOME/bin:$PATH"
@@ -12,6 +13,10 @@ export LANG="pt_BR.UTF-8"
 export LC_COLLATE="C"
 
 # Executar aplicativos adicionais
-exec --no-startup-id copyq &
-exec --no-startup-id flameshot &
+#exec --no-startup-id copyq &
+#exec --no-startup-id flameshot &
+copyq &
+flameshot &
+picom &
+redshift &
 
