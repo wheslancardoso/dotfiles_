@@ -49,6 +49,20 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 alias vim="nvim"
 alias rl1='i3-msg "workspace 1; append_layout ~/.config/i3/layout.json"'
 
+# Meus Aliases para Maven e JavaFX
+
+# Para apenas rodar a aplicação JavaFX
+alias mrun='mvn javafx:run'
+
+# Para apenas limpar o projeto (apagar a pasta 'target')
+alias mclean='mvn clean'
+
+# Para limpar e construir o projeto (um "build" completo)
+alias mbuild='mvn clean package'
+
+# BÔNUS: Um alias para fazer tudo de uma vez: limpar, construir e rodar!
+alias mfullrun='mvn clean package javafx:run'
+
 # Package manager
 alias apti="sudo nala install -y "
 alias aptu="sudo nala update"
