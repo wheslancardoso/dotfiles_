@@ -66,7 +66,7 @@ fonts=(
 
 for font in ${fonts[@]}
 do
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/$font.zip
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/$font.zip
     unzip $font.zip -d $HOME/.local/share/fonts/$font/
     rm $font.zip
 done
