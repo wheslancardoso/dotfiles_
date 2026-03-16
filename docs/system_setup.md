@@ -43,7 +43,14 @@ Achieving a "Full Vim" experience by integrating Yazi (File Manager) with Librew
 ### Key Features
 - **Floating terminal Yazi**: Launch Yazi in a floating window for quick file management.
 - **Keybind**: `$mod + E` is now configured to launch Yazi in a terminal (Kitty).
-- **Tridactyl Bindings**: Custom commands in `.tridactylrc` to bridge the browser and file manager.
+- **Tridactyl Bindings**:
+    - `;y`: Open Yazi in a floating terminal.
+    - `d`: Scroll down (half page).
+    - `u`: Scroll up (half page).
+    - `q`: Close current tab (mapped to `tabclose`).
+    - `m`: Record macro (moved from `q`).
+    - `U`: Undo (reopen closed tab).
+    - Custom commands in `.tridactylrc` to bridge the browser and file manager.
 
 ---
 

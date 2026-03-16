@@ -13,3 +13,20 @@ bind ;u ! kitty --class floating_yazi -e yazi
 " Optional: aesthetic settings
 set theme dark
 set smoothscroll true
+
+" /* ---- ⌨️ Vibe Coder Navigation ⌨️ ---- */
+
+" Remapeia 'd' para scroll para baixo (meia tela)
+bind d scrollpage 0.5
+
+" Remapeia 'u' para scroll para cima (meia tela)
+bind u scrollpage -0.5
+
+" Remapeia 'q' para fechar aba (mais rápido que 'x')
+bind q tabclose
+
+" Move a função de macro (originalmente no 'q') para 'm'
+bind m macrorecord
+
+" Move a função de reabrir aba fechada para 'U' (Shift+u)
+bind U undo
