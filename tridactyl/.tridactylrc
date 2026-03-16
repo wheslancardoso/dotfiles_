@@ -1,0 +1,15 @@
+" /* ---- 💫 Tridactyl Configuration 💫 ---- */
+
+" Set Kitty as the editor (for 'Full Vim' experience in textareas)
+set editorcmd kitty --class floating_yazi -e nvim
+
+" Bind ;y to open Yazi in a floating window (File Manager)
+" Using '!' which is a common alias for shell/native run
+bind ;y ! kitty --class floating_yazi -e yazi
+
+" Bind ;u to facilitate 'uploads' (Manual: open Yazi, copy path, paste)
+bind ;u ! kitty --class floating_yazi -e yazi
+
+" Optional: aesthetic settings
+set theme dark
+set smoothscroll true

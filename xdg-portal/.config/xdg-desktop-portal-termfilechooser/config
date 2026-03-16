@@ -1,0 +1,3 @@
+[general]
+command = kitty --class floating_yazi -e yazi %f
+output_path = /tmp/xdg-desktop-portal-termfilechooser-output
