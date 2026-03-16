@@ -1,10 +1,38 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Ja KooLit - Default 
+
+* All main themes or configs are located in ~/.config/rofi/themes/
+* If you want to edit the config, that is where you should edit NOT here 
+
+* To load a new theme, manually edit the file path below or choose desired theme via rofi theme selector (choose via app menu)
+
+* Alternative way to Load (preferred) own cooked by Ja 
+* SUPER CTRL R - Choose style & SUPER CTRL SHIFT R 
+
+* TIPS 
+* If you have edited a config, rename it with a unique name. During update, the contents of 
+* ~/.config/rofi/themes/ will be replaced. */
+
+/* ---- Global Configuration ---- */
 configuration {
-	display-drun: "Applications";
-	display-window: "Windows:";
-	drun-display-format: "{icon} {name}";
-	modi: "window,run,drun";
-	show-icons: true;
-	font: "ShureTechMono Nerd Font Mono 12";
-	icon-theme: "kora";
+    kb-row-up: "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
+    kb-row-down: "Down,Control+j";
+    kb-accept-entry: "Control+m,Return,KP_Enter,Control+l";
+    kb-remove-to-eol: "Control+Shift+e";
+    kb-mode-next: "Shift+Right,Control+Tab,Control+n";
+    kb-mode-previous: "Shift+Left,Control+Shift+Tab,Control+p";
+    kb-remove-char-back: "BackSpace,Shift+BackSpace,Control+h";
+
+    /* Unbind conflicting defaults */
+    kb-mode-complete: "";
+    kb-row-select: "";
 }
-@theme "~/.config/rofi/theme.rasi"
+
+/* ---- Global Configuration Fonts ---- */
+@import "~/.config/rofi/0-shared-fonts.rasi"
+
+/* note: Main themes in ~/.config/rofi/themes */
+/* You can manually change here or you can use rofi theme selector SUPER SHIFT E */
+
+
+@theme "~/.config/rofi/themes/KooL_style-4.rasi"

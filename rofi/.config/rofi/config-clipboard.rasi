@@ -1,0 +1,59 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+/* Clipboard Config - Clipboard */
+
+@import "~/.config/rofi/config.rasi"  
+
+configuration {
+    kb-row-up: "Up,Control+k,k";
+    kb-row-down: "Down,Control+j,j";
+    kb-accept-entry: "Control+m,Return,KP_Enter,Control+l,l";
+    kb-remove-char-back: "BackSpace,Shift+BackSpace,Control+h,h";
+
+    /* Unbind individual characters from other actions if necessary */
+    /* Rofi doesn't usually bind plain 'j' etc, but let's be safe */
+    kb-ellipsize: "";
+}
+
+/* ---- Window ---- */
+window {
+  width: inherit;
+  height: inherit;
+  hover-select: true;
+}
+
+/* ---- Mainbox ---- */
+mainbox {
+  children:
+    [ "inputbar", "message", "listview"];
+}
+
+/* ---- Entry ---- */
+entry {
+  width: inherit;
+  placeholder: " 📋 Search  Clipboard ";
+}
+
+/* ---- Listview ---- */
+listview {
+  columns: 1;
+  lines: 8;
+  fixed-height: true;
+  spacing: 6px;
+  cycle: true;
+}
+
+/* ---- Elements ---- */
+element {
+  orientation: horizontal;
+}
+
+element-icon {
+  size: 0%;
+}
+
+element-text {
+  horizontal-align: 0.0;
+  vertical-align: 0.5;
+  margin: 0px;
+  padding: 0px;
+}

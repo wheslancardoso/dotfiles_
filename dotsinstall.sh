@@ -17,7 +17,8 @@ sudo pacman -S --noconfirm zsh
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm htop
-sudo pacman -S --noconfirm copyq
+sudo pacman -S --noconfirm rofi-greenclip
+sudo pacman -S --noconfirm cliphist
 sudo pacman -S --noconfirm flameshot
 sudo pacman -S --noconfirm exa
 sudo pacman -S --noconfirm bat
