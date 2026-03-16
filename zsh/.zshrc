@@ -10,6 +10,10 @@ plugins=(
     archlinux
     zsh-autosuggestions
     zsh-syntax-highlighting
+    vi-mode
+    fzf
+    sudo
+    zsh-history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -32,8 +36,20 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
-# Set-up FZF key bindings (CTRL R for fuzzy history finder)
+# Set-up FZF key bindings and enhancements
 source <(fzf --zsh)
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border --color='hl:#76c1ff,hl+:#76c1ff'"
+
+# Keytimeout for faster mode switching in vi-mode
+export KEYTIMEOUT=1
+
+# Zsh History Substring Search bindings
+# Set up arrow keys for substring search in history
+bindkey '^[[A' zsh-history-substring-search-up
+bindkey '^[[B' zsh-history-substring-search-down
+# Bind k and j in vicmd mode
+bindkey -M vicmd 'k' zsh-history-substring-search-up
+bindkey -M vicmd 'j' zsh-history-substring-search-down
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000

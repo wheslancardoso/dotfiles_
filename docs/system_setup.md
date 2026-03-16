@@ -54,7 +54,21 @@ Achieving a "Full Vim" experience by integrating Yazi (File Manager) with Librew
 
 ---
 
-## 4. Automation Workflow
+## 4. Shell Optimization (Zsh)
+We've transformed the terminal into a modal environment.
+
+### Key Features
+- **VI Mode**: Press `ESC` in the terminal to enter Command Mode. Use `h/j/k/l`, `w`, `b`, `x`, `r`, etc., to edit your command line.
+- **FZF (Fuzzy Finder)**: 
+    - `CTRL+R`: Fuzzy search history.
+    - `CTRL+T`: Fuzzy search files.
+    - `ALT+C`: Fuzzy cd into subdirectories.
+- **History Substring Search**: Type part of a command and use **Up/Down arrows** (or `j/k` in VI command mode) to cycle through matching history items.
+- **Sudo Shortcut**: Press `ESC` twice to automatically prefix the current command with `sudo`.
+
+---
+
+## 5. Automation Workflow
 1. Clone dotfiles: `git clone <repo_url> ~/dotfiles_`
 2. Run system setup: `bash ~/dotfiles_/scripts/setup-system.sh`
 3. Link configurations: `bash ~/dotfiles_/stow-it.sh`
