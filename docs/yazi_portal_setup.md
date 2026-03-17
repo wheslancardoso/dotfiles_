@@ -2,6 +2,16 @@
 
 Este guia documenta como configurar o **Yazi** para funcionar como o seletor de arquivos de sistema (upload/download) em janelas flutuantes no Hyprland.
 
+## ⚡ Instalação Rápida (Automática)
+
+Se você já usa o Hyprland do JaKooLit, pode configurar tudo com um único comando:
+
+```bash
+~/dotfiles_/scripts/setup_yazi_portal.sh
+```
+
+---
+
 ## 1. Dependências Necessárias
 
 Para que a integração funcione, você precisa dos seguintes pacotes:
