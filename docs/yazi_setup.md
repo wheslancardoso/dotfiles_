@@ -18,6 +18,6 @@ Instead of typing `yazi`, simply type:
 y
 ```
 
-## Integration with Tridactyl
+## Integração com Portal (File Picker Flutuante)
 
-(If applicable) Yazi is also configured to be launched from LibreWolf via Tridactyl for file selection. See [guia_integracao_yazi_tridactyl.md](file:///home/lan/dotfiles_/guia_integracao_yazi_tridactyl.md) for details.
+Yazi está configurado para ser lançado pelo navegador para operações de arquivo (upload/download) em uma janela flutuante. Veja detalhes no guia: [yazi_portal_setup.md](file:///home/lan/dotfiles_/docs/yazi_portal_setup.md).
