@@ -1,3 +1,6 @@
-[general]
-command = kitty --class floating_yazi -e yazi %f
-output_path = /tmp/xdg-desktop-portal-termfilechooser-output
+[filechooser]
+cmd=/usr/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+default_dir=$HOME
+env=TERMCMD=/usr/bin/kitty --class floating_yazi --title termfilechooser -e
+open_mode=suggested
+save_mode=suggested
