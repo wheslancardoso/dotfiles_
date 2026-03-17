@@ -63,7 +63,17 @@ exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CUR
 Abra o `about:config` e garanta que:
 - `widget.use-xdg-desktop-portal.file-picker` está definido como `1`.
 
-## 5. Como Testar e Diagnosticar
+## 5. Como usar o seletar para "Salvar Como" (Download)
+
+O portal de terminal funciona de forma diferente de um seletor gráfico. Ele te dá um arquivo temporário que você deve mover para o destino final:
+
+1.  **Recorte (Cut)** o arquivo temporário (geralmente com nome longo do portal) apertando `x`.
+2.  **Navegue** até a pasta onde deseja salvar o download.
+3.  **Cole (Paste)** o arquivo apertando `p`.
+4.  **Renomeie (Rename)** o arquivo para o nome desejado apertando `r`.
+5.  **Confirme** selecionando o arquivo renomeado e apertando `Enter`.
+
+## 6. Como Testar e Diagnosticar
 
 Se o seletor não abrir, você pode forçar um gatilho manual via terminal para ver os erros:
 
