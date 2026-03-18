@@ -94,7 +94,7 @@ Isso habilita o **Yazi como seletor de arquivos** do browser.
 |---|---|
 | `$mod + E` | Yazi (gerenciador de arquivos) |
 | `Alt + V` | CopyQ (histórico de clipboard) |
-| `$mod + R` | Rofi (lançador) |
+| `$mod + D` | Rofi (lançador) |
 | `$mod + W` | Selecionar Wallpaper (Otimizado p/ 1366x768) |
 
 ---
