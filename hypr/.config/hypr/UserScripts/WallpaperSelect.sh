@@ -41,7 +41,9 @@ scale_factor=$(hyprctl monitors -j | jq -r --arg mon "$focused_monitor" '.[] | s
 monitor_height=$(hyprctl monitors -j | jq -r --arg mon "$focused_monitor" '.[] | select(.name == $mon) | .height')
 
 icon_size=$(echo "scale=1; ($monitor_height * 3) / ($scale_factor * 150)" | bc)
-adjusted_icon_size=$(echo "$icon_size" | awk '{if ($1 < 15) $1 = 20; if ($1 > 25) $1 = 25; print $1}')
+# Para telas menores (1366x768), o icon_size original de 15.3 resultava em imagens pequenas.
+# Se for menor que 21 (como 1080p que dá 21.6), força um valor maior (28) para garantir miniaturas boas.
+adjusted_icon_size=$(echo "$icon_size" | awk '{if ($1 < 21) $1 = 28; if ($1 > 28) $1 = 28; print $1}')
 rofi_override="element-icon{size:${adjusted_icon_size}%;}"
 
 # Kill existing wallpaper daemons for video
