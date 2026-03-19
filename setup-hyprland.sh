@@ -302,7 +302,7 @@ done
 info "Aplicando links simbólicos com GNU Stow..."
 for pkg in "${HYPRLAND_PACKAGES[@]}"; do
     if [ -d "$DOTFILES_DIR/$pkg" ]; then
-        stow -d "$DOTFILES_DIR" -t "$HOME" -R "$pkg" 2>/dev/null && \
+        stow -d "$DOTFILES_DIR" -t "$HOME" -R "$pkg" && \
             ok "Stow: $pkg" || \
             warn "Stow falhou para $pkg (possível conflito remanescente)"
     else
