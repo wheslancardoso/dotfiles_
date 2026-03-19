@@ -66,3 +66,6 @@ quickshell.target = '~/.config/quickshell/qml_color.json'
 
 #zathura.template = 'colors-zathura'
 #zathura.target = '~/.config/zathura/zathurarc'
+
+alacritty.template = 'colors-alacritty.toml'
+alacritty.target = '~/.config/alacritty/colors.toml'
